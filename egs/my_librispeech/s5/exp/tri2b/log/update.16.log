@@ -1,0 +1,19 @@
+# gmm-est --write-occs=exp/tri2b/17.occs --mix-up=46745 --power=0.25 exp/tri2b/16.mdl "gmm-sum-accs - exp/tri2b/16.*.acc |" exp/tri2b/17.mdl 
+# Started at Tue Mar 16 15:11:11 EET 2021
+#
+gmm-est --write-occs=exp/tri2b/17.occs --mix-up=46745 --power=0.25 exp/tri2b/16.mdl 'gmm-sum-accs - exp/tri2b/16.*.acc |' exp/tri2b/17.mdl 
+gmm-sum-accs - exp/tri2b/16.1.acc exp/tri2b/16.10.acc exp/tri2b/16.2.acc exp/tri2b/16.3.acc exp/tri2b/16.4.acc exp/tri2b/16.5.acc exp/tri2b/16.6.acc exp/tri2b/16.7.acc exp/tri2b/16.8.acc exp/tri2b/16.9.acc 
+LOG (gmm-sum-accs[5.5.268-f9828]:main():gmm-sum-accs.cc:63) Summed 10 stats, total count 1.26459e+07, avg like/frame -47.478
+LOG (gmm-sum-accs[5.5.268-f9828]:main():gmm-sum-accs.cc:66) Total count of stats is 1.26459e+07
+LOG (gmm-sum-accs[5.5.268-f9828]:main():gmm-sum-accs.cc:67) Written stats to -
+LOG (gmm-est[5.5.268-f9828]:MleUpdate():transition-model.cc:528) TransitionModel::Update, objf change is -6.13208e-12 per frame over 1.26459e+07 frames. 
+LOG (gmm-est[5.5.268-f9828]:MleUpdate():transition-model.cc:531) 388 probabilities floored, 19117 out of 29144 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (gmm-est[5.5.268-f9828]:main():gmm-est.cc:102) Transition model update: Overall -6.13208e-12 log-like improvement per frame over 1.26459e+07 frames.
+LOG (gmm-est[5.5.268-f9828]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:225) 0 variance elements floored in 0 Gaussians, out of 43920
+LOG (gmm-est[5.5.268-f9828]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:229) Removed 0 Gaussians due to counts < --min-gaussian-occupancy=10 and --remove-low-count-gaussians=true
+LOG (gmm-est[5.5.268-f9828]:main():gmm-est.cc:113) GMM update: Overall 0.0652243 objective function improvement per frame over 1.26459e+07 frames
+LOG (gmm-est[5.5.268-f9828]:main():gmm-est.cc:116) GMM update: Overall avg like per frame = -47.478 over 1.26459e+07 frames.
+LOG (gmm-est[5.5.268-f9828]:SplitByCount():am-diag-gmm.cc:116) Split 3712 states with target = 46745, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 43920 to 46745
+LOG (gmm-est[5.5.268-f9828]:main():gmm-est.cc:146) Written model to exp/tri2b/17.mdl
+# Accounting: time=2 threads=1
+# Ended (code 0) at Tue Mar 16 15:11:13 EET 2021, elapsed time 2 seconds

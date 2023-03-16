@@ -1,0 +1,9 @@
+# gmm-init-mono --shared-phones=data/lang_nosp/phones/sets.int "--train-feats=ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/1/utt2spk scp:data/train_2kshort/split10/1/cmvn.scp scp:data/train_2kshort/split10/1/feats.scp ark:- | add-deltas  ark:- ark:- | subset-feats --n=10 ark:- ark:-|" data/lang_nosp/topo 39 exp/mono-2/0.mdl exp/mono-2/tree 
+# Started at Sat Mar 13 13:13:15 EET 2021
+#
+gmm-init-mono --shared-phones=data/lang_nosp/phones/sets.int '--train-feats=ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/1/utt2spk scp:data/train_2kshort/split10/1/cmvn.scp scp:data/train_2kshort/split10/1/feats.scp ark:- | add-deltas  ark:- ark:- | subset-feats --n=10 ark:- ark:-|' data/lang_nosp/topo 39 exp/mono-2/0.mdl exp/mono-2/tree 
+subset-feats --n=10 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train_2kshort/split10/1/utt2spk scp:data/train_2kshort/split10/1/cmvn.scp scp:data/train_2kshort/split10/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Mar 13 13:13:15 EET 2021, elapsed time 0 seconds

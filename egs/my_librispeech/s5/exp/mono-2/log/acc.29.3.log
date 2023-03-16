@@ -1,0 +1,16 @@
+# gmm-acc-stats-ali exp/mono-2/29.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/3/utt2spk scp:data/train_2kshort/split10/3/cmvn.scp scp:data/train_2kshort/split10/3/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono-2/ali.3.gz|" exp/mono-2/29.3.acc 
+# Started at Sat Mar 13 13:15:28 EET 2021
+#
+gmm-acc-stats-ali exp/mono-2/29.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/3/utt2spk scp:data/train_2kshort/split10/3/cmvn.scp scp:data/train_2kshort/split10/3/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono-2/ali.3.gz|' exp/mono-2/29.3.acc 
+apply-cmvn --utt2spk=ark:data/train_2kshort/split10/3/utt2spk scp:data/train_2kshort/split10/3/cmvn.scp scp:data/train_2kshort/split10/3/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 2159-179154-0018 avg. like is -100.053 over 468 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 2391-145015-0100 avg. like is -103.373 over 503 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 26-496-0026 avg. like is -96.9413 over 237 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 27-124992-0072 avg. like is -96.0995 over 445 frames.
+LOG (apply-cmvn[5.5.268-f9828]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 206 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:112) Done 206 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -97.6589 over 72416 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Sat Mar 13 13:15:30 EET 2021, elapsed time 2 seconds

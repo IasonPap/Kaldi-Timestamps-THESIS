@@ -1,0 +1,12 @@
+ADIZ /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:5
+JLEE /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:249
+JTAN /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:493
+KENN /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:737
+MCUR /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:981
+MPOL /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:1225
+MPUR /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:1469
+NJAT /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:1713
+PMAR /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:1957
+SAMF /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:2201
+VKOW /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:2445
+ZHIY /media/datadisk/greg/Jason/MyKaldiEnv/envs/NUS48/mfcc/cmvn_train_all48utts.ark:2689

@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/1/text |" "ark:|gzip -c >exp/tri1/fsts.1.gz" 
+# Started at Sun Mar 14 15:43:34 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/1/text |' 'ark:|gzip -c >exp/tri1/fsts.1.gz' 
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing L'ALLEMANDE with 3
+sym2int.pl: replacing DINARZADE with 3
+sym2int.pl: replacing TINCOMB with 3
+sym2int.pl: replacing ADDRESSER with 3
+sym2int.pl: replacing RYNCH'S with 3
+sym2int.pl: replacing BLENAN with 3
+sym2int.pl: replacing PSYCHOTHERAPEUTIC with 3
+sym2int.pl: replacing PSYCHOTHERAPEUTIC with 3
+sym2int.pl: replacing PENETRATIVENESS with 3
+sym2int.pl: replacing FLORIANO with 3
+sym2int.pl: replacing MAGUA with 3
+sym2int.pl: replacing MAGUA with 3
+sym2int.pl: replacing TOBACCOEY with 3
+sym2int.pl: replacing RUMMISH with 3
+sym2int.pl: replacing HISSOP with 3
+sym2int.pl: replacing THENARDIER with 3
+sym2int.pl: replacing THENARDIER with 3
+sym2int.pl: replacing PLAINWARD with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 20 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 492 graphs, failed for 0
+# Accounting: time=23 threads=1
+# Ended (code 0) at Sun Mar 14 15:43:57 EET 2021, elapsed time 23 seconds

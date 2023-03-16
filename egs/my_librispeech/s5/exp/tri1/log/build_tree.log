@@ -1,0 +1,21 @@
+# build-tree --verbose=1 --max-leaves=2000 --cluster-thresh=-1 exp/tri1/treeacc data/lang_nosp/phones/roots.int exp/tri1/questions.qst data/lang_nosp/topo exp/tri1/tree 
+# Started at Sun Mar 14 15:43:14 EET 2021
+#
+build-tree --verbose=1 --max-leaves=2000 --cluster-thresh=-1 exp/tri1/treeacc data/lang_nosp/phones/roots.int exp/tri1/questions.qst data/lang_nosp/topo exp/tri1/tree 
+LOG (build-tree[5.5.268-f9828]:main():build-tree.cc:104) Number of separate statistics is 133449
+LOG (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:161) BuildTree: before building trees, map has 41 leaves.
+LOG (build-tree[5.5.268-f9828]:SplitDecisionTree():build-tree-utils.cc:577) DoDecisionTreeSplit: split 1959 times, #leaves now 2000
+LOG (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:187) Setting clustering threshold to smallest split 1335.09
+VLOG[1] (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:196) After decision tree split, num-leaves = 2000, like-impr = 4.21872 per frame over 6.34221e+06 frames.
+VLOG[1] (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:200) Including just phones that were split, improvement is 4.21872 per frame over 6.34221e+06 frames.
+LOG (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:215) BuildTree: removed 399 leaves.
+VLOG[1] (build-tree[5.5.268-f9828]:ClusterEventMapToNClustersRestrictedByMap():build-tree-utils.cc:914) Number of non-empty clusters in map = 41
+VLOG[1] (build-tree[5.5.268-f9828]:ClusterEventMapToNClustersRestrictedByMap():build-tree-utils.cc:915) Number of non-empty clusters = 1601
+LOG (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:231) BuildTree: Rounded num leaves to multiple of 8 by removing 1 leaves.
+VLOG[1] (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:256) Objf change due to clustering -0.0529078 per frame.
+VLOG[1] (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:259) Normalizing over only split phones, this is: -0.0529078 per frame.
+VLOG[1] (build-tree[5.5.268-f9828]:BuildTree():build-tree.cc:262) Num-leaves is now 1600
+WARNING (build-tree[5.5.268-f9828]:main():build-tree.cc:185) Saw no stats for following phones: 2 3 4 5 6 7 8 9 11 12 13 14 18 26 27 28 29 30 32 34 36 38 40 42 43 44 45 46 54 56 58 59 60 61 62 66 74 75 76 77 78 82 86 90 91 92 93 94 98 106 110 114 118 122 123 124 125 126 128 130 136 138 139 140 141 142 150 151 152 154 155 156 157 158 162 170 174 178 180 182 183 184 185 186 190 194 196 198 199 200 201 202 206 214 218 222 226 230 234 235 238 239 240 241 242 246 254 255 256 257 258 259 260 262 266 267 270 274 278 282 286 290 294 295 296 297 298 299 300 302 303 304 306 307 308 310 311 312 313 314 315 318 322 323 326 330 332 334 336 338 342 346 
+LOG (build-tree[5.5.268-f9828]:main():build-tree.cc:189) Wrote tree
+# Accounting: time=15 threads=1
+# Ended (code 0) at Sun Mar 14 15:43:29 EET 2021, elapsed time 15 seconds
