@@ -1,0 +1,16 @@
+# gmm-acc-stats-ali exp/mono-2/31.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/4/utt2spk scp:data/train_2kshort/split10/4/cmvn.scp scp:data/train_2kshort/split10/4/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono-2/ali.4.gz|" exp/mono-2/31.4.acc 
+# Started at Sat Mar 13 13:15:31 EET 2021
+#
+gmm-acc-stats-ali exp/mono-2/31.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/4/utt2spk scp:data/train_2kshort/split10/4/cmvn.scp scp:data/train_2kshort/split10/4/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono-2/ali.4.gz|' exp/mono-2/31.4.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train_2kshort/split10/4/utt2spk scp:data/train_2kshort/split10/4/cmvn.scp scp:data/train_2kshort/split10/4/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 2911-15084-0002 avg. like is -99.9052 over 410 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 307-127535-0015 avg. like is -99.2268 over 396 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 322-124146-0023 avg. like is -106.661 over 354 frames.
+LOG (apply-cmvn[5.5.268-f9828]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 205 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 3259-158083-0039 avg. like is -99.6017 over 213 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:112) Done 205 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -98.2072 over 75260 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat Mar 13 13:15:32 EET 2021, elapsed time 1 seconds

@@ -1,0 +1,183 @@
+Sat Mar 27 14:06:04 EET 2021
+steps/align_fmllr.sh --nj 5 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+utils/lang/check_phones_compatible.sh: phone symbol tables data/lang/phones.txt and ../librispeech/s5//exp/tri4b-leaves/phones.txt are not compatible.
+Sat Mar 27 14:07:10 EET 2021
+steps/align_fmllr.sh --nj 5 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+Sat Mar 27 14:31:42 EET 2021
+steps/align_fmllr.sh --nj 5 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+Sat Mar 27 14:34:05 EET 2021
+steps/align_fmllr.sh --nj 5 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using ../librispeech/s5//exp/tri4b-leaves/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri4b_align
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 51.00917431192661% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 65.13761467889908% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b_align/log/analyze_alignments.log
+327 warnings in exp/tri4b_align/log/fmllr.*.log
+2 warnings in exp/tri4b_align/log/analyze_alignments.log
+797 warnings in exp/tri4b_align/log/align_pass2.*.log
+882 warnings in exp/tri4b_align/log/align_pass1.*.log
+Sat Mar 27 14:43:48 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 50000 data/train data/lang ../librispeech/s5//exp/tri4b_tri4b_align exp/sing_tri4b
+train_sat.sh: no such file ../librispeech/s5//exp/tri4b_tri4b_align/final.mdl
+Sat Mar 27 14:44:45 EET 2021
+steps/align_fmllr.sh --nj 5 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+Sat Mar 27 14:46:48 EET 2021
+steps/align_fmllr.sh --nj 5 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using ../librispeech/s5//exp/tri4b-leaves/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri4b_align
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 51.00917431192661% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 65.13761467889908% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b_align/log/analyze_alignments.log
+882 warnings in exp/tri4b_align/log/align_pass1.*.log
+327 warnings in exp/tri4b_align/log/fmllr.*.log
+2 warnings in exp/tri4b_align/log/analyze_alignments.log
+797 warnings in exp/tri4b_align/log/align_pass2.*.log
+Sat Mar 27 14:56:19 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 50000 data/train data/lang ../librispeech/s5//exp/tri4b_align exp/sing_tri4b
+train_sat.sh: no such file ../librispeech/s5//exp/tri4b_align/final.mdl
+Mon Mar 29 19:23:07 EEST 2021
+steps/train_sat.sh --cmd run.pl 5000 50000 data/train data/lang exp/tri4b_align exp/sing_tri4b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri4b_align
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model[5.5.268-f9828]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 27 with no stats; corresponding phone list: 111 112 113 114 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp/tri4b_align to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Mon Mar 29 19:28:15 EEST 2021
+steps/align_fmllr.sh --nj 5 --beam 20 --retry_beam 80 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using ../librispeech/s5//exp/tri4b-leaves/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri4b_align
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 47.06744868035191% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 57.18475073313783% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b_align/log/analyze_alignments.log
+191 warnings in exp/tri4b_align/log/fmllr.*.log
+634 warnings in exp/tri4b_align/log/align_pass1.*.log
+2 warnings in exp/tri4b_align/log/analyze_alignments.log
+561 warnings in exp/tri4b_align/log/align_pass2.*.log
+Mon Mar 29 19:43:26 EEST 2021
+steps/train_sat.sh --beam 20 --retry_beam 80 --cmd run.pl 5000 50000 data/train data/lang exp/tri4b_align exp/sing_tri4b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri4b_align
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+WARNING (gmm-init-model[5.5.268-f9828]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 27 with no stats; corresponding phone list: 111 112 113 114 
+This is a bad warning.
+steps/train_sat.sh: Converting alignments from exp/tri4b_align to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/sing_tri4b
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 39.92395437262358% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SIL is seen only 51.07731305449936% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_alignments.sh: see stats in exp/sing_tri4b/log/analyze_alignments.log
+982 warnings in exp/sing_tri4b/log/init_model.log
+2 warnings in exp/sing_tri4b/log/analyze_alignments.log
+441 warnings in exp/sing_tri4b/log/align.*.*.log
+1 warnings in exp/sing_tri4b/log/build_tree.log
+2110 warnings in exp/sing_tri4b/log/update.*.log
+2509 warnings in exp/sing_tri4b/log/acc.*.*.log
+5 warnings in exp/sing_tri4b/log/convert.*.log
+41 warnings in exp/sing_tri4b/log/est_alimdl.log
+518 warnings in exp/sing_tri4b/log/fmllr.*.*.log
+2 warnings in exp/sing_tri4b/log/questions.log
+steps/train_sat.sh: Likelihood evolution:
+-44.2943 -43.8338 -43.4341 -42.802 -41.0213 -39.9567 -39.1591 -38.5361 -38.0441 -38.2697 -37.5793 -36.8343 -36.3622 -36.0541 -35.7618 -35.4852 -35.2331 -34.9751 -34.7433 -34.4668 -34.1398 -33.9207 -33.7099 -33.5075 -33.3179 -33.1341 -32.9475 -32.7649 -32.5922 -32.4132 -32.268 -32.2124 -32.1652 -32.132 
+exp/sing_tri4b: nj=5 align prob=-42.36 over 6.72h [retry=7.2%, fail=5.3%] states=3320 gauss=50220 fmllr-impr=1.99 over 3.57h tree-impr=5.65
+steps/train_sat.sh: done training SAT system in exp/sing_tri4b
+Wed Mar 31 16:31:48 EEST 2021
+steps/align_fmllr.sh --nj 5 --beam 20 --retry_beam 80 --cmd run.pl data/train data/lang ../librispeech/s5//exp/tri4b-leaves exp/tri4b_align
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+utils/lang/check_phones_compatible.sh: phone symbol tables data/lang/phones.txt and ../librispeech/s5//exp/tri4b-leaves/phones.txt are not compatible.

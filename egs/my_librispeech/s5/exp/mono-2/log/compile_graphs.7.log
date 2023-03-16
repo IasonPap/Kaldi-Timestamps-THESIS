@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/mono-2/tree exp/mono-2/0.mdl data/lang_nosp/L.fst "ark:sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_2kshort/split10/7/text|" "ark:|gzip -c >exp/mono-2/fsts.7.gz" 
+# Started at Sat Mar 13 13:13:15 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/mono-2/tree exp/mono-2/0.mdl data/lang_nosp/L.fst 'ark:sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_2kshort/split10/7/text|' 'ark:|gzip -c >exp/mono-2/fsts.7.gz' 
+sym2int.pl: replacing GUNNBIORN with 3
+sym2int.pl: replacing THORHILD with 3
+sym2int.pl: replacing MATTERIMONY with 3
+sym2int.pl: replacing REPAVING with 3
+sym2int.pl: replacing GRIMACER with 3
+sym2int.pl: replacing POMUM with 3
+sym2int.pl: replacing BLEWED with 3
+sym2int.pl: replacing MO'NFUL with 3
+sym2int.pl: replacing WO'M with 3
+sym2int.pl: replacing KYOUNTRY with 3
+sym2int.pl: replacing MO'NFUL with 3
+sym2int.pl: replacing SUCHET'S with 3
+sym2int.pl: replacing MAUBUEE with 3
+sym2int.pl: replacing ENJOLRAS with 3
+sym2int.pl: replacing CROPOLE with 3
+sym2int.pl: replacing L'HOTELIER with 3
+sym2int.pl: replacing FAUCHELEVENT with 3
+sym2int.pl: replacing COSETTE'S with 3
+sym2int.pl: replacing DAUPHINES with 3
+sym2int.pl: replacing TARRANGOWER with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 20 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 194 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Sat Mar 13 13:13:19 EET 2021, elapsed time 4 seconds

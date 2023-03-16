@@ -1,0 +1,1544 @@
+Thu Mar 18 00:44:38 EET 2021
+Thu Mar 18 01:22:16 EET 2021
+steps/train_sat.sh --cmd run.pl 2500 15000 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-control
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-control
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-control/log/analyze_alignments.log
+1 warnings in exp/tri4b-control/log/questions.log
+534 warnings in exp/tri4b-control/log/align.*.*.log
+162 warnings in exp/tri4b-control/log/acc.*.*.log
+27 warnings in exp/tri4b-control/log/fmllr.*.*.log
+1 warnings in exp/tri4b-control/log/build_tree.log
+steps/train_sat.sh: Likelihood evolution:
+-49.4066 -49.2016 -49.1388 -48.8113 -48.3234 -47.9039 -47.5993 -47.3662 -47.1512 -46.433 -46.2224 -46.0236 -45.9102 -45.8077 -45.704 -45.6056 -45.5156 -45.4396 -45.3692 -45.1863 -45.0905 -45.0347 -44.9834 -44.9341 -44.8857 -44.8399 -44.7969 -44.7552 -44.7141 -44.604 -44.5443 -44.5203 -44.5069 -44.4983 
+exp/tri4b-control: nj=20 align prob=-46.99 over 100.44h [retry=0.5%, fail=0.0%] states=2152 gauss=15026 fmllr-impr=0.40 over 83.82h tree-impr=9.39
+steps/train_sat.sh: done training SAT system in exp/tri4b-control
+Thu Mar 18 03:02:19 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 50000 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-control
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-control
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-control/log/analyze_alignments.log
+222 warnings in exp/tri4b-control/log/acc.*.*.log
+1 warnings in exp/tri4b-control/log/questions.log
+1 warnings in exp/tri4b-control/log/build_tree.log
+552 warnings in exp/tri4b-control/log/align.*.*.log
+29 warnings in exp/tri4b-control/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.5395 -48.3737 -48.319 -47.9786 -47.4529 -46.8646 -46.3985 -46.0781 -45.7812 -45.1261 -44.8905 -44.6418 -44.499 -44.3809 -44.2699 -44.1664 -44.0705 -43.9829 -43.9033 -43.7219 -43.6186 -43.5584 -43.5044 -43.453 -43.4044 -43.358 -43.3121 -43.2669 -43.2228 -43.1164 -43.0535 -43.0269 -43.0115 -43.0017 
+exp/tri4b-control: nj=20 align prob=-45.45 over 100.43h [retry=0.5%, fail=0.0%] states=4256 gauss=50079 fmllr-impr=0.36 over 83.82h tree-impr=10.23
+steps/train_sat.sh: done training SAT system in exp/tri4b-control
+Thu Mar 18 04:47:20 EET 2021
+steps/train_sat.sh --cmd run.pl 6250 50000 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+31 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+237 warnings in exp/tri4b-leaves/log/acc.*.*.log
+621 warnings in exp/tri4b-leaves/log/align.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.2991 -48.1419 -48.0891 -47.7497 -47.1632 -46.6245 -46.2373 -45.9498 -45.69 -45.0663 -44.8436 -44.6115 -44.4671 -44.3552 -44.2569 -44.1656 -44.0775 -43.9956 -43.9171 -43.7353 -43.633 -43.5725 -43.519 -43.4675 -43.4167 -43.3672 -43.32 -43.2736 -43.2289 -43.1262 -43.0647 -43.0392 -43.0244 -43.0148 
+exp/tri4b-leaves: nj=20 align prob=-45.42 over 100.43h [retry=0.5%, fail=0.0%] states=5312 gauss=50073 fmllr-impr=0.35 over 83.82h tree-impr=10.46
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Thu Mar 18 06:30:22 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 107500 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-gauss/log/analyze_alignments.log
+28 warnings in exp/tri4b-gauss/log/fmllr.*.*.log
+1 warnings in exp/tri4b-gauss/log/build_tree.log
+381 warnings in exp/tri4b-gauss/log/align.*.*.log
+1 warnings in exp/tri4b-gauss/log/questions.log
+167 warnings in exp/tri4b-gauss/log/acc.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.5395 -48.3737 -48.319 -47.9736 -47.3688 -46.5305 -45.8871 -45.4067 -45.0528 -44.4337 -44.1786 -43.8802 -43.7111 -43.581 -43.4614 -43.3499 -43.2432 -43.145 -43.0543 -42.87 -42.7607 -42.6933 -42.6332 -42.5759 -42.5215 -42.4697 -42.4195 -42.3706 -42.3231 -42.2227 -42.1553 -42.1247 -42.1062 -42.0937 
+exp/tri4b-gauss: nj=20 align prob=-44.61 over 100.44h [retry=0.3%, fail=0.0%] states=4256 gauss=107649 fmllr-impr=0.39 over 83.82h tree-impr=10.23
+steps/train_sat.sh: done training SAT system in exp/tri4b-gauss
+Thu Mar 18 08:34:11 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 153750 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri4b-gauss/log/questions.log
+152 warnings in exp/tri4b-gauss/log/acc.*.*.log
+1 warnings in exp/tri4b-gauss/log/build_tree.log
+28 warnings in exp/tri4b-gauss/log/fmllr.*.*.log
+331 warnings in exp/tri4b-gauss/log/align.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.5395 -48.3737 -48.319 -47.9717 -47.3334 -46.3717 -45.6211 -45.1072 -44.7257 -44.1081 -43.842 -43.5255 -43.3401 -43.1977 -43.0678 -42.95 -42.8417 -42.7442 -42.6543 -42.4729 -42.3585 -42.2866 -42.2226 -42.1625 -42.103 -42.0461 -41.9923 -41.9398 -41.8886 -41.789 -41.7176 -41.6854 -41.6656 -41.6518 
+exp/tri4b-gauss: nj=20 align prob=-44.21 over 100.44h [retry=0.2%, fail=0.0%] states=4256 gauss=153955 fmllr-impr=0.40 over 83.82h tree-impr=10.23
+steps/train_sat.sh: done training SAT system in exp/tri4b-gauss
+Finished at: Thu Mar 18 10:54:30 EET 2021
+Thu Mar 18 12:48:39 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 107500 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+659 warnings in exp/tri4b-leaves/log/align.*.*.log
+40 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+274 warnings in exp/tri4b-leaves/log/acc.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.6873 -48.5197 -48.4644 -48.1148 -47.5069 -46.7708 -46.2139 -45.7993 -45.4777 -44.8547 -44.6103 -44.3355 -44.175 -44.0516 -43.9393 -43.8351 -43.7357 -43.643 -43.5567 -43.3731 -43.2659 -43.2005 -43.1417 -43.0861 -43.0332 -42.9819 -42.932 -42.8835 -42.8369 -42.7358 -42.6703 -42.6417 -42.6245 -42.6131 
+exp/tri4b-leaves: nj=10 align prob=-44.61 over 100.44h [retry=0.3%, fail=0.0%] states=4256 gauss=107654 fmllr-impr=0.39 over 83.82h tree-impr=10.23
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Thu Mar 18 14:54:30 EET 2021
+steps/train_sat.sh --cmd run.pl 8125 107500 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+41 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+304 warnings in exp/tri4b-leaves/log/acc.*.*.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+741 warnings in exp/tri4b-leaves/log/align.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.3537 -48.1977 -48.1444 -47.7948 -47.1588 -46.5434 -46.0723 -45.7093 -45.3891 -44.7754 -44.5457 -44.2942 -44.1425 -44.0196 -43.9067 -43.8048 -43.7113 -43.6248 -43.544 -43.3649 -43.2587 -43.1942 -43.1364 -43.0808 -43.0268 -42.9753 -42.925 -42.8755 -42.8271 -42.7218 -42.656 -42.6284 -42.6119 -42.6011 
+exp/tri4b-leaves: nj=10 align prob=-44.49 over 100.43h [retry=0.3%, fail=0.0%] states=6904 gauss=107665 fmllr-impr=0.35 over 83.82h tree-impr=10.71
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Thu Mar 18 16:50:28 EET 2021
+steps/train_sat.sh --cmd run.pl 10000 107500 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+344 warnings in exp/tri4b-leaves/log/acc.*.*.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+43 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+838 warnings in exp/tri4b-leaves/log/align.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.2287 -48.0765 -48.0241 -47.6793 -47.0445 -46.4283 -45.9785 -45.642 -45.3548 -44.7554 -44.5253 -44.2873 -44.1415 -44.0241 -43.9168 -43.8166 -43.7206 -43.6318 -43.5501 -43.3704 -43.2627 -43.1982 -43.1412 -43.0865 -43.0331 -42.9814 -42.9319 -42.8836 -42.8371 -42.7354 -42.6703 -42.6434 -42.6274 -42.6164 
+exp/tri4b-leaves: nj=10 align prob=-44.49 over 100.42h [retry=0.4%, fail=0.0%] states=8424 gauss=107654 fmllr-impr=0.34 over 83.82h tree-impr=10.89
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Thu Mar 18 18:43:37 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 176900 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-gauss/log/analyze_alignments.log
+38 warnings in exp/tri4b-gauss/log/fmllr.*.*.log
+224 warnings in exp/tri4b-gauss/log/acc.*.*.log
+1 warnings in exp/tri4b-gauss/log/questions.log
+1 warnings in exp/tri4b-gauss/log/build_tree.log
+460 warnings in exp/tri4b-gauss/log/align.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.7677 -48.5972 -48.5412 -48.1867 -47.5275 -46.5222 -45.7536 -45.2293 -44.8404 -44.2259 -43.9593 -43.6378 -43.4479 -43.306 -43.1772 -43.0585 -42.9498 -42.8509 -42.7597 -42.5776 -42.4594 -42.3833 -42.3168 -42.2544 -42.1941 -42.1366 -42.0814 -42.0273 -41.9745 -41.8741 -41.8013 -41.7686 -41.7484 -41.7342 
+exp/tri4b-gauss: nj=10 align prob=-44.04 over 100.44h [retry=0.2%, fail=0.0%] states=4256 gauss=177103 fmllr-impr=0.40 over 83.82h tree-impr=10.23
+steps/train_sat.sh: done training SAT system in exp/tri4b-gauss
+Thu Mar 18 21:14:21 EET 2021
+steps/train_sat.sh --cmd run.pl 5000 200000 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri4b-gauss/log/build_tree.log
+421 warnings in exp/tri4b-gauss/log/align.*.*.log
+37 warnings in exp/tri4b-gauss/log/fmllr.*.*.log
+184 warnings in exp/tri4b-gauss/log/acc.*.*.log
+2 warnings in exp/tri4b-gauss/log/update.*.log
+1 warnings in exp/tri4b-gauss/log/questions.log
+steps/train_sat.sh: Likelihood evolution:
+-48.7677 -48.5972 -48.5412 -48.1861 -47.5173 -46.4946 -45.7038 -45.1708 -44.7744 -44.1584 -43.885 -43.5581 -43.3615 -43.2169 -43.087 -42.9692 -42.8614 -42.7624 -42.67 -42.4879 -42.3697 -42.2938 -42.2257 -42.1614 -42.0995 -42.0392 -41.9807 -41.9249 -41.8712 -41.7711 -41.6974 -41.6643 -41.6438 -41.6294 
+exp/tri4b-gauss: nj=10 align prob=-43.90 over 100.44h [retry=0.2%, fail=0.0%] states=4256 gauss=200232 fmllr-impr=0.41 over 83.82h tree-impr=10.23
+steps/train_sat.sh: done training SAT system in exp/tri4b-gauss
+Finished at: Thu Mar 18 23:54:15 EET 2021
+Fri Mar 19 13:58:08 EET 2021
+steps/train_sat.sh --cmd run.pl 6250 107500 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+437 warnings in exp/tri4b-leaves/log/align.*.*.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+29 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+187 warnings in exp/tri4b-leaves/log/acc.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.2991 -48.1419 -48.0891 -47.747 -47.113 -46.3822 -45.8131 -45.336 -44.9703 -44.3691 -44.1283 -43.8478 -43.6784 -43.5434 -43.4248 -43.3181 -43.2211 -43.1301 -43.0427 -42.8584 -42.7456 -42.6776 -42.6173 -42.5598 -42.5051 -42.4527 -42.401 -42.3515 -42.3039 -42.2035 -42.1367 -42.1075 -42.0897 -42.0777 
+exp/tri4b-leaves: nj=20 align prob=-44.53 over 100.44h [retry=0.3%, fail=0.0%] states=5312 gauss=107642 fmllr-impr=0.37 over 83.82h tree-impr=10.46
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Fri Mar 19 16:07:46 EET 2021
+steps/train_sat.sh --cmd run.pl 8900 107500 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+262 warnings in exp/tri4b-leaves/log/acc.*.*.log
+555 warnings in exp/tri4b-leaves/log/align.*.*.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+34 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-47.949 -47.8033 -47.7523 -47.4075 -46.7781 -46.1001 -45.5598 -45.1915 -44.8807 -44.2971 -44.0646 -43.8129 -43.6614 -43.5379 -43.4216 -43.3133 -43.215 -43.1253 -43.0422 -42.8642 -42.7548 -42.6889 -42.6295 -42.5734 -42.5195 -42.4671 -42.4161 -42.3669 -42.3189 -42.2164 -42.1479 -42.1186 -42.1012 -42.09 
+exp/tri4b-leaves: nj=20 align prob=-44.50 over 100.43h [retry=0.4%, fail=0.0%] states=7552 gauss=107668 fmllr-impr=0.34 over 83.82h tree-impr=10.79
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Fri Mar 19 18:06:25 EET 2021
+steps/train_sat.sh --cmd run.pl 6700 107500 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+457 warnings in exp/tri4b-leaves/log/align.*.*.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+197 warnings in exp/tri4b-leaves/log/acc.*.*.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+29 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.2263 -48.0715 -48.0189 -47.6732 -47.0351 -46.3218 -45.7499 -45.3062 -44.9499 -44.3548 -44.1188 -43.8399 -43.6708 -43.5391 -43.4235 -43.318 -43.2205 -43.128 -43.0411 -42.8591 -42.7491 -42.6821 -42.6217 -42.5622 -42.505 -42.4524 -42.4008 -42.3507 -42.3031 -42.2019 -42.1349 -42.1058 -42.0883 -42.0767 
+exp/tri4b-leaves: nj=20 align prob=-44.52 over 100.43h [retry=0.3%, fail=0.0%] states=5712 gauss=107647 fmllr-impr=0.36 over 83.82h tree-impr=10.53
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Finished at: Fri Mar 19 20:08:42 EET 2021
+Sat Mar 20 12:57:00 EET 2021
+steps/train_sat.sh --cmd run.pl 8900 200000 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b/log/analyze_alignments.log
+406 warnings in exp/tri4b/log/align.*.*.log
+222 warnings in exp/tri4b/log/acc.*.*.log
+1 warnings in exp/tri4b/log/update.*.log
+1 warnings in exp/tri4b/log/questions.log
+1 warnings in exp/tri4b/log/build_tree.log
+30 warnings in exp/tri4b/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-47.949 -47.8033 -47.7522 -47.4014 -46.7006 -45.8041 -45.1425 -44.6707 -44.3058 -43.7401 -43.4796 -43.1765 -42.999 -42.8614 -42.7349 -42.6171 -42.5075 -42.4058 -42.3125 -42.1326 -42.0127 -41.9371 -41.8688 -41.8033 -41.7396 -41.6772 -41.6168 -41.5588 -41.5025 -41.3999 -41.3247 -41.2932 -41.2739 -41.2604 
+exp/tri4b: nj=20 align prob=-43.73 over 100.43h [retry=0.2%, fail=0.0%] states=7552 gauss=200225 fmllr-impr=0.36 over 83.82h tree-impr=10.79
+steps/train_sat.sh: done training SAT system in exp/tri4b
+Finished at: Sat Mar 20 15:14:10 EET 2021
+0.000488052 -0.224942
+HCLGa is not stochastic
+Sat Mar 20 18:16:17 EET 2021
+steps/train_sat.sh --cmd run.pl 10000 200000 data/train_clean_100 data/lang_nosp exp/tri3b_ali_clean_100 exp/tri4b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: Using transforms from exp/tri3b_ali_clean_100
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri3b_ali_clean_100 to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri4b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4b-leaves/log/analyze_alignments.log
+222 warnings in exp/tri4b-leaves/log/acc.*.*.log
+1 warnings in exp/tri4b-leaves/log/build_tree.log
+1 warnings in exp/tri4b-leaves/log/questions.log
+410 warnings in exp/tri4b-leaves/log/align.*.*.log
+30 warnings in exp/tri4b-leaves/log/fmllr.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-47.847 -47.7045 -47.6542 -47.3098 -46.6085 -45.7758 -45.1378 -44.6455 -44.2841 -43.7292 -43.4679 -43.167 -42.9895 -42.8537 -42.731 -42.6174 -42.5104 -42.4104 -42.317 -42.1341 -42.0098 -41.9329 -41.8637 -41.798 -41.7342 -41.6731 -41.6147 -41.5574 -41.5 -41.3962 -41.321 -41.2894 -41.2697 -41.2562 
+exp/tri4b-leaves: nj=20 align prob=-43.71 over 100.43h [retry=0.2%, fail=0.0%] states=8424 gauss=200223 fmllr-impr=0.35 over 83.82h tree-impr=10.89
+steps/train_sat.sh: done training SAT system in exp/tri4b-leaves
+Finished at: Sat Mar 20 20:30:10 EET 2021
+utils/mkgraph.sh: exp/tri4b/graph_nosp_tgsmall/HCLG.fst is up to date.
+Sun Mar 21 11:17:02 EET 2021
+Finished at: Sun Mar 21 11:17:02 EET 2021
+Sun Mar 21 11:17:02 EET 2021
+Sun Mar 21 11:17:42 EET 2021
+Sun Mar 21 11:18:27 EET 2021
+Sun Mar 21 11:20:58 EET 2021
+0.000488052 -0.224942
+HCLGa is not stochastic
+Sun Mar 21 11:24:59 EET 2021
+Sun Mar 21 11:33:42 EET 2021
+Sun Mar 21 15:13:47 EET 2021
+Finished at: Sun Mar 21 15:13:47 EET 2021
+
+Re-Creating the 'lang' directory
+Sun Mar 21 15:13:47 EET 2021
+steps/get_prons.sh --cmd run.pl data/train_clean_100 data/lang_nosp exp/tri4b-leaves
+utils/mkgraph.sh: exp/tri4b-leaves/graph_nosp_tgsmall/HCLG.fst is up to date.
+steps/get_prons.sh: exp/tri4b-leaves/ali.1.gz exists, so starting from alignments.
+Sun Mar 21 15:13:54 EET 2021
+Finished at: Sun Mar 21 15:13:54 EET 2021
+
+Re-Creating the 'lang' directory
+Sun Mar 21 15:13:55 EET 2021
+steps/get_prons.sh --cmd run.pl data/train_clean_100 data/lang_nosp exp/tri4b-leaves
+utils/mkgraph.sh: exp/tri4b-leaves/graph_nosp_tgsmall/HCLG.fst is up to date.
+steps/get_prons.sh: exp/tri4b-leaves/ali.1.gz exists, so starting from alignments.
+steps/get_prons.sh: done writing prons to exp/tri4b-leaves/prons.*.gz, silence counts in 
+steps/get_prons.sh: exp/tri4b-leaves/sil_counts_nowb.txt and pronunciation counts in 
+steps/get_prons.sh: exp/tri4b-leaves/pron_counts.{int,txt}
+steps/get_prons.sh: ... and also in exp/tri4b-leaves/pron_counts_nowb.txt
+Sun Mar 21 15:14:31 EET 2021
+Checking data/local/dict_nosp/silence_phones.txt ...
+--> reading data/local/dict_nosp/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/silence_phones.txt is OK
+
+Checking data/local/dict_nosp/optional_silence.txt ...
+--> reading data/local/dict_nosp/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/optional_silence.txt is OK
+
+Checking data/local/dict_nosp/nonsilence_phones.txt ...
+--> reading data/local/dict_nosp/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict_nosp/lexicon.txt
+--> reading data/local/dict_nosp/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexicon.txt is OK
+
+Checking data/local/dict_nosp/lexiconp.txt
+--> reading data/local/dict_nosp/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/lexiconp.txt is OK
+
+Checking lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt
+--> lexicon pair data/local/dict_nosp/lexicon.txt and data/local/dict_nosp/lexiconp.txt match
+
+Checking data/local/dict_nosp/extra_questions.txt ...
+--> reading data/local/dict_nosp/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict_nosp/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict_nosp]
+
+utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
+utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dict/
+utils/dict_dir_add_pronprobs.sh: validating data/local/dict ..
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/lexiconp.txt
+--> reading data/local/dict/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp.txt is OK
+
+Checking data/local/dict/lexiconp_silprob.txt
+--> reading data/local/dict/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt
+--> lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt match
+
+Checking lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt
+--> lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt match
+
+Checking data/local/dict/extra_questions.txt ...
+--> reading data/local/dict/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+Some low-probability prons include: 
+# sort -k2,2 -n data/local/dict/lexiconp.txt  | head -n 8
+US 0.00166666 Y UW1 EH1 S
+LIVED 0.00469484 L AY1 V D
+WAS 0.00512601 W AA1 Z
+BEYOND 0.00520834 B IH0 AO1 N D
+SERVICE 0.00675675 S ER1 V IH0 S
+PARTICULAR 0.00826446 P AA2 T IH1 K Y AH0 L ER0
+WATCH 0.00909091 W AO1 CH
+LAST 0.00910747 L AO1 S T
+Sun Mar 21 15:15:13 EET 2021
+utils/prepare_lang.sh data/local/dict <UNK> data/local/lang_tmp data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/lexiconp.txt
+--> reading data/local/dict/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp.txt is OK
+
+Checking data/local/dict/lexiconp_silprob.txt
+--> reading data/local/dict/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt
+--> lexicon pair data/local/dict/lexicon.txt and data/local/dict/lexiconp.txt match
+
+Checking lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt
+--> lexicon pair data/local/dict/lexiconp.txt and data/local/dict/lexiconp_silprob.txt match
+
+Checking data/local/dict/extra_questions.txt ...
+--> reading data/local/dict/extra_questions.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/extra_questions.txt is OK
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 336 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 17 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 14 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 346 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 56 word sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 75 word sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+Sun Mar 21 15:17:30 EET 2021
+utils/validate_lang.pl data/lang_test_tgsmall
+Checking data/lang_test_tgsmall/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgsmall/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgsmall/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_test_tgsmall/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_test_tgsmall/phones/context_indep.txt
+--> data/lang_test_tgsmall/phones/context_indep.int corresponds to data/lang_test_tgsmall/phones/context_indep.txt
+--> data/lang_test_tgsmall/phones/context_indep.csl corresponds to data/lang_test_tgsmall/phones/context_indep.txt
+--> data/lang_test_tgsmall/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 336 entry/entries in data/lang_test_tgsmall/phones/nonsilence.txt
+--> data/lang_test_tgsmall/phones/nonsilence.int corresponds to data/lang_test_tgsmall/phones/nonsilence.txt
+--> data/lang_test_tgsmall/phones/nonsilence.csl corresponds to data/lang_test_tgsmall/phones/nonsilence.txt
+--> data/lang_test_tgsmall/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_test_tgsmall/phones/silence.txt
+--> data/lang_test_tgsmall/phones/silence.int corresponds to data/lang_test_tgsmall/phones/silence.txt
+--> data/lang_test_tgsmall/phones/silence.csl corresponds to data/lang_test_tgsmall/phones/silence.txt
+--> data/lang_test_tgsmall/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.int corresponds to data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.csl corresponds to data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 17 entry/entries in data/lang_test_tgsmall/phones/disambig.txt
+--> data/lang_test_tgsmall/phones/disambig.int corresponds to data/lang_test_tgsmall/phones/disambig.txt
+--> data/lang_test_tgsmall/phones/disambig.csl corresponds to data/lang_test_tgsmall/phones/disambig.txt
+--> data/lang_test_tgsmall/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_test_tgsmall/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_test_tgsmall/phones/roots.txt
+--> data/lang_test_tgsmall/phones/roots.int corresponds to data/lang_test_tgsmall/phones/roots.txt
+--> data/lang_test_tgsmall/phones/roots.{txt, int} are OK
+
+Checking data/lang_test_tgsmall/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_test_tgsmall/phones/sets.txt
+--> data/lang_test_tgsmall/phones/sets.int corresponds to data/lang_test_tgsmall/phones/sets.txt
+--> data/lang_test_tgsmall/phones/sets.{txt, int} are OK
+
+Checking data/lang_test_tgsmall/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 14 entry/entries in data/lang_test_tgsmall/phones/extra_questions.txt
+--> data/lang_test_tgsmall/phones/extra_questions.int corresponds to data/lang_test_tgsmall/phones/extra_questions.txt
+--> data/lang_test_tgsmall/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_test_tgsmall/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 346 entry/entries in data/lang_test_tgsmall/phones/word_boundary.txt
+--> data/lang_test_tgsmall/phones/word_boundary.int corresponds to data/lang_test_tgsmall/phones/word_boundary.txt
+--> data/lang_test_tgsmall/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_test_tgsmall/phones/optional_silence.txt
+--> data/lang_test_tgsmall/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_test_tgsmall/phones/disambig.txt has "#0" and "#1"
+--> data/lang_test_tgsmall/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_test_tgsmall/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_test_tgsmall/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_test_tgsmall/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_test_tgsmall/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 29 word sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 73 word sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_test_tgsmall/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgsmall/oov.txt
+--> data/lang_test_tgsmall/oov.int corresponds to data/lang_test_tgsmall/oov.txt
+--> data/lang_test_tgsmall/oov.{txt, int} are OK
+
+--> data/lang_test_tgsmall/L.fst is olabel sorted
+--> data/lang_test_tgsmall/L_disambig.fst is olabel sorted
+--> data/lang_test_tgsmall/G.fst is ilabel sorted
+--> data/lang_test_tgsmall/G.fst has 249533 states
+--> utils/lang/check_g_properties.pl successfully validated data/lang_test_tgsmall/G.fst
+--> utils/lang/check_g_properties.pl succeeded.
+--> SUCCESS [validating lang directory data/lang_test_tgsmall]
+utils/validate_lang.pl data/lang_test_tgmed
+Checking data/lang_test_tgmed/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgmed/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang_test_tgmed/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang_test_tgmed/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_test_tgmed/phones/context_indep.txt
+--> data/lang_test_tgmed/phones/context_indep.int corresponds to data/lang_test_tgmed/phones/context_indep.txt
+--> data/lang_test_tgmed/phones/context_indep.csl corresponds to data/lang_test_tgmed/phones/context_indep.txt
+--> data/lang_test_tgmed/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 336 entry/entries in data/lang_test_tgmed/phones/nonsilence.txt
+--> data/lang_test_tgmed/phones/nonsilence.int corresponds to data/lang_test_tgmed/phones/nonsilence.txt
+--> data/lang_test_tgmed/phones/nonsilence.csl corresponds to data/lang_test_tgmed/phones/nonsilence.txt
+--> data/lang_test_tgmed/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang_test_tgmed/phones/silence.txt
+--> data/lang_test_tgmed/phones/silence.int corresponds to data/lang_test_tgmed/phones/silence.txt
+--> data/lang_test_tgmed/phones/silence.csl corresponds to data/lang_test_tgmed/phones/silence.txt
+--> data/lang_test_tgmed/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.int corresponds to data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.csl corresponds to data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 17 entry/entries in data/lang_test_tgmed/phones/disambig.txt
+--> data/lang_test_tgmed/phones/disambig.int corresponds to data/lang_test_tgmed/phones/disambig.txt
+--> data/lang_test_tgmed/phones/disambig.csl corresponds to data/lang_test_tgmed/phones/disambig.txt
+--> data/lang_test_tgmed/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang_test_tgmed/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_test_tgmed/phones/roots.txt
+--> data/lang_test_tgmed/phones/roots.int corresponds to data/lang_test_tgmed/phones/roots.txt
+--> data/lang_test_tgmed/phones/roots.{txt, int} are OK
+
+Checking data/lang_test_tgmed/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 41 entry/entries in data/lang_test_tgmed/phones/sets.txt
+--> data/lang_test_tgmed/phones/sets.int corresponds to data/lang_test_tgmed/phones/sets.txt
+--> data/lang_test_tgmed/phones/sets.{txt, int} are OK
+
+Checking data/lang_test_tgmed/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 14 entry/entries in data/lang_test_tgmed/phones/extra_questions.txt
+--> data/lang_test_tgmed/phones/extra_questions.int corresponds to data/lang_test_tgmed/phones/extra_questions.txt
+--> data/lang_test_tgmed/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang_test_tgmed/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 346 entry/entries in data/lang_test_tgmed/phones/word_boundary.txt
+--> data/lang_test_tgmed/phones/word_boundary.int corresponds to data/lang_test_tgmed/phones/word_boundary.txt
+--> data/lang_test_tgmed/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang_test_tgmed/phones/optional_silence.txt
+--> data/lang_test_tgmed/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang_test_tgmed/phones/disambig.txt has "#0" and "#1"
+--> data/lang_test_tgmed/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang_test_tgmed/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang_test_tgmed/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang_test_tgmed/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang_test_tgmed/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 32 word sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 5 word sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang_test_tgmed/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang_test_tgmed/oov.txt
+--> data/lang_test_tgmed/oov.int corresponds to data/lang_test_tgmed/oov.txt
+--> data/lang_test_tgmed/oov.{txt, int} are OK
+
+--> data/lang_test_tgmed/L.fst is olabel sorted
+--> data/lang_test_tgmed/L_disambig.fst is olabel sorted
+--> data/lang_test_tgmed/G.fst is ilabel sorted
+--> data/lang_test_tgmed/G.fst has 597083 states
+--> utils/lang/check_g_properties.pl successfully validated data/lang_test_tgmed/G.fst
+--> utils/lang/check_g_properties.pl succeeded.
+--> SUCCESS [validating lang directory data/lang_test_tgmed]
+Succeeded in formatting data.
+Sun Mar 21 15:21:21 EET 2021
+Sun Mar 21 15:30:07 EET 2021
+Started test_clean at: Sun Mar 21 15:42:44 EET 2021
+steps/decode_fmllr.sh --nj 20 --cmd run.pl --num-threads 15 exp/tri4b/graph_tgsmall data/test_clean exp/tri4b/decode_tgsmall_test_clean
+steps/decode.sh --scoring-opts  --num-threads 15 --skip-scoring false --acwt 0.083333 --nj 20 --cmd run.pl --beam 10.0 --model exp/tri4b/final.alimdl --max-active 2000 exp/tri4b/graph_tgsmall data/test_clean exp/tri4b/decode_tgsmall_test_clean.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri4b/graph_tgsmall exp/tri4b/decode_tgsmall_test_clean.si
+analyze_phone_length_stats.py: WARNING: optional-silence SPN_S is seen only 0.07633587786259542% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SPN_S is seen only 2.1755725190839694% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4b/decode_tgsmall_test_clean.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(2,6,10) and mean=6.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4b/decode_tgsmall_test_clean.si/log/analyze_lattice_depth_stats.log
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri4b/graph_tgsmall exp/tri4b/decode_tgsmall_test_clean
+analyze_phone_length_stats.py: WARNING: optional-silence SPN_S is seen only 0.11450381679389313% of the time at utterance begin.  This may not be optimal.
+analyze_phone_length_stats.py: WARNING: optional-silence SPN_S is seen only 2.0610687022900764% of the time at utterance end.  This may not be optimal.
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4b/decode_tgsmall_test_clean/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(3,7,11) and mean=6.9
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri4b/decode_tgsmall_test_clean/log/analyze_lattice_depth_stats.log
+Sun Mar 21 17:55:43 EET 2021
+steps/lmrescore.sh --cmd run.pl data/lang_test_tgsmall data/lang_test_tgmed data/test_clean exp/tri4b/decode_tgsmall_test_clean exp/tri4b/decode_tgmed_test_clean
+Mon Mar 22 07:27:54 EET 2021
+steps/lmrescore_const_arpa.sh --cmd run.pl data/lang_test_tgsmall data/lang_test_tglarge data/test_clean exp/tri4b/decode_tgsmall_test_clean exp/tri4b/decode_tglarge_test_clean
+Mon Mar 22 07:29:03 EET 2021
+steps/lmrescore_const_arpa.sh --cmd run.pl data/lang_test_tgsmall data/lang_test_fglarge data/test_clean exp/tri4b/decode_tgsmall_test_clean exp/tri4b/decode_fglarge_test_clean
+steps/lmrescore_const_arpa.sh: Missing file data/lang_test_fglarge/G.carpa

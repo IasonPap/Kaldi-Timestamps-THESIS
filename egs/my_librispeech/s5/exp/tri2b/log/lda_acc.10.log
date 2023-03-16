@@ -1,0 +1,25 @@
+# ali-to-post "ark:gunzip -c exp/tri1_ali_10k/ali.10.gz|" ark:- | weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri1_ali_10k/final.mdl ark:- ark:- | acc-lda --rand-prune=4.0 exp/tri1_ali_10k/final.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_10k/split10/10/utt2spk scp:data/train_10k/split10/10/cmvn.scp scp:data/train_10k/split10/10/feats.scp ark:- | splice-feats --left-context=10 --right-context=10 ark:- ark:- |" ark,s,cs:- exp/tri2b/lda.10.acc 
+# Started at Tue Mar 16 14:54:21 EET 2021
+#
+weight-silence-post 0.0 1:2:3:4:5:6:7:8:9:10 exp/tri1_ali_10k/final.mdl ark:- ark:- 
+ali-to-post 'ark:gunzip -c exp/tri1_ali_10k/ali.10.gz|' ark:- 
+acc-lda --rand-prune=4.0 exp/tri1_ali_10k/final.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_10k/split10/10/utt2spk scp:data/train_10k/split10/10/cmvn.scp scp:data/train_10k/split10/10/feats.scp ark:- | splice-feats --left-context=10 --right-context=10 ark:- ark:- |' ark,s,cs:- exp/tri2b/lda.10.acc 
+splice-feats --left-context=10 --right-context=10 ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train_10k/split10/10/utt2spk scp:data/train_10k/split10/10/cmvn.scp scp:data/train_10k/split10/10/feats.scp ark:- 
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 100 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 200 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 300 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 400 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 500 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 600 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 700 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 800 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 900 utterances.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:114) Done 1000 utterances.
+LOG (ali-to-post[5.5.268-f9828]:main():ali-to-post.cc:73) Converted 2861 alignments.
+LOG (apply-cmvn[5.5.268-f9828]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 1004 utterances, errors on 0
+LOG (weight-silence-post[5.5.268-f9828]:main():weight-silence-post.cc:95) Done 2861 posteriors.
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:117) Done 1004 files, failed for 0
+LOG (acc-lda[5.5.268-f9828]:main():acc-lda.cc:122) Written statistics.
+# Accounting: time=60 threads=1
+# Ended (code 0) at Tue Mar 16 14:55:21 EET 2021, elapsed time 60 seconds

@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/2/text |" "ark:|gzip -c >exp/tri1/fsts.2.gz" 
+# Started at Sun Mar 14 15:43:34 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/2/text |' 'ark:|gzip -c >exp/tri1/fsts.2.gz' 
+sym2int.pl: replacing DESINTERESSE with 3
+sym2int.pl: replacing PARODISTS with 3
+sym2int.pl: replacing NAIVETES with 3
+sym2int.pl: replacing SCRAPPER'S with 3
+sym2int.pl: replacing UPGRADES with 3
+sym2int.pl: replacing RONICKY'S with 3
+sym2int.pl: replacing LOCRINOS with 3
+sym2int.pl: replacing LAGREE with 3
+sym2int.pl: replacing LEGACIED with 3
+sym2int.pl: replacing SODERBALL with 3
+sym2int.pl: replacing DUSAK with 3
+sym2int.pl: replacing DISGUSTINGNESS with 3
+sym2int.pl: replacing MEERACLE with 3
+sym2int.pl: replacing OHDAHD with 3
+sym2int.pl: replacing BUSKIRK'S with 3
+sym2int.pl: replacing EMBELLISH'D with 3
+sym2int.pl: replacing VOLTA'S with 3
+sym2int.pl: replacing HOTTAM with 3
+sym2int.pl: replacing IMPROPITIOUS with 3
+sym2int.pl: replacing TAROSS with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 37 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 500 graphs, failed for 0
+# Accounting: time=23 threads=1
+# Ended (code 0) at Sun Mar 14 15:43:57 EET 2021, elapsed time 23 seconds

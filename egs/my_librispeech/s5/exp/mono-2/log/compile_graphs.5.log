@@ -1,0 +1,9 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/mono-2/tree exp/mono-2/0.mdl data/lang_nosp/L.fst "ark:sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_2kshort/split10/5/text|" "ark:|gzip -c >exp/mono-2/fsts.5.gz" 
+# Started at Sat Mar 13 13:13:15 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/mono-2/tree exp/mono-2/0.mdl data/lang_nosp/L.fst 'ark:sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_2kshort/split10/5/text|' 'ark:|gzip -c >exp/mono-2/fsts.5.gz' 
+sym2int.pl: replacing CHIFFONNIERE with 3
+** Replaced 1 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 198 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Sat Mar 13 13:13:19 EET 2021, elapsed time 4 seconds

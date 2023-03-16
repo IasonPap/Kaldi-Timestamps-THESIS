@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/10/text |" "ark:|gzip -c >exp/tri1/fsts.10.gz" 
+# Started at Sun Mar 14 15:43:34 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/10/text |' 'ark:|gzip -c >exp/tri1/fsts.10.gz' 
+sym2int.pl: replacing KIMBOLTON with 3
+sym2int.pl: replacing RITZNER with 3
+sym2int.pl: replacing MYSTIFIC with 3
+sym2int.pl: replacing RITZNER with 3
+sym2int.pl: replacing DUELLI with 3
+sym2int.pl: replacing EURALIA with 3
+sym2int.pl: replacing THENARDIER with 3
+sym2int.pl: replacing THENARDIER with 3
+sym2int.pl: replacing PONINE with 3
+sym2int.pl: replacing WASHABILITY with 3
+sym2int.pl: replacing TROUTINA with 3
+sym2int.pl: replacing TROUTINA with 3
+sym2int.pl: replacing SOUSSIO with 3
+sym2int.pl: replacing TROUTINA with 3
+sym2int.pl: replacing SOUSSIO with 3
+sym2int.pl: replacing TROUTINA with 3
+sym2int.pl: replacing TROUTINA with 3
+sym2int.pl: replacing TROUTINA with 3
+sym2int.pl: replacing TROUTINA with 3
+sym2int.pl: replacing SOUSSIO with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 40 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 494 graphs, failed for 0
+# Accounting: time=23 threads=1
+# Ended (code 0) at Sun Mar 14 15:43:57 EET 2021, elapsed time 23 seconds

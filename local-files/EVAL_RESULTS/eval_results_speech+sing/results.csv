@@ -1,0 +1,8 @@
+Track,Average absolute error,Median absolute error,Percentage of correct segments,Percentage of correct onsets with tolerance
+JLEE-08,0.237,0.021,0.525,0.883
+KENN-10,0.060,0.032,0.843,0.959
+KENN-12,0.262,0.041,0.530,0.711
+MCUR-04,0.857,0.088,0.444,0.611
+MCUR-10,0.062,0.032,0.812,0.954
+NJAT-15,0.228,0.040,0.697,0.850
+SAMF-09,0.186,0.048,0.712,0.854

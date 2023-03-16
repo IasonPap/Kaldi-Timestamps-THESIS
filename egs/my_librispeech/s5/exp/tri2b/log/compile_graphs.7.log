@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/7/text |" "ark:|gzip -c >exp/tri2b/fsts.7.gz" 
+# Started at Tue Mar 16 14:56:40 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/7/text |' 'ark:|gzip -c >exp/tri2b/fsts.7.gz' 
+sym2int.pl: replacing GALLOONS with 3
+sym2int.pl: replacing COSETTE'S with 3
+sym2int.pl: replacing REPAVING with 3
+sym2int.pl: replacing GRIMACER with 3
+sym2int.pl: replacing MASCARADES with 3
+sym2int.pl: replacing DISAGGREGATE with 3
+sym2int.pl: replacing POPULACES with 3
+sym2int.pl: replacing YESSES with 3
+sym2int.pl: replacing GILLENORMAND with 3
+sym2int.pl: replacing PROUVAIRE with 3
+sym2int.pl: replacing COSETTE'S with 3
+sym2int.pl: replacing COSETTE'S with 3
+sym2int.pl: replacing PONTMERCY with 3
+sym2int.pl: replacing FAUCHELEVENT with 3
+sym2int.pl: replacing NEMORIN with 3
+sym2int.pl: replacing QUIRKING with 3
+sym2int.pl: replacing POMUM with 3
+sym2int.pl: replacing MARETZEK with 3
+sym2int.pl: replacing MUSCOVADO with 3
+sym2int.pl: replacing MUSCOVADO with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 119 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 998 graphs, failed for 0
+# Accounting: time=45 threads=1
+# Ended (code 0) at Tue Mar 16 14:57:25 EET 2021, elapsed time 45 seconds

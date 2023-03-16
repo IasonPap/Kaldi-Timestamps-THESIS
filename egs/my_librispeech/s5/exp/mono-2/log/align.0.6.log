@@ -1,0 +1,20 @@
+# align-equal-compiled "ark:gunzip -c exp/mono-2/fsts.6.gz|" "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/6/utt2spk scp:data/train_2kshort/split10/6/cmvn.scp scp:data/train_2kshort/split10/6/feats.scp ark:- | add-deltas  ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp/mono-2/0.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/6/utt2spk scp:data/train_2kshort/split10/6/cmvn.scp scp:data/train_2kshort/split10/6/feats.scp ark:- | add-deltas  ark:- ark:- |" ark:- exp/mono-2/0.6.acc 
+# Started at Sat Mar 13 13:13:19 EET 2021
+#
+align-equal-compiled 'ark:gunzip -c exp/mono-2/fsts.6.gz|' 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/6/utt2spk scp:data/train_2kshort/split10/6/cmvn.scp scp:data/train_2kshort/split10/6/feats.scp ark:- | add-deltas  ark:- ark:- |' ark,t:- 
+gmm-acc-stats-ali --binary=true exp/mono-2/0.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/6/utt2spk scp:data/train_2kshort/split10/6/cmvn.scp scp:data/train_2kshort/split10/6/feats.scp ark:- | add-deltas  ark:- ark:- |' ark:- exp/mono-2/0.6.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train_2kshort/split10/6/utt2spk scp:data/train_2kshort/split10/6/cmvn.scp scp:data/train_2kshort/split10/6/feats.scp ark:- 
+apply-cmvn --utt2spk=ark:data/train_2kshort/split10/6/utt2spk scp:data/train_2kshort/split10/6/cmvn.scp scp:data/train_2kshort/split10/6/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 4267-72637-0020 avg. like is -110.706 over 327 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 445-123857-0004 avg. like is -102.961 over 379 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 4680-16026-0019 avg. like is -107.867 over 232 frames.
+LOG (apply-cmvn[5.5.268-f9828]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 192 utterances, errors on 0
+LOG (align-equal-compiled[5.5.268-f9828]:main():align-equal-compiled.cc:107) Success: done 192 utterances.
+LOG (apply-cmvn[5.5.268-f9828]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 192 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:112) Done 192 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -110.934 over 70889 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat Mar 13 13:13:20 EET 2021, elapsed time 1 seconds

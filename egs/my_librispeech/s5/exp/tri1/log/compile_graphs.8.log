@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/8/text |" "ark:|gzip -c >exp/tri1/fsts.8.gz" 
+# Started at Sun Mar 14 15:43:34 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri1/tree exp/tri1/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_5k/split10/8/text |' 'ark:|gzip -c >exp/tri1/fsts.8.gz' 
+sym2int.pl: replacing GRAND'THER'S with 3
+sym2int.pl: replacing GWYNPLAINE'S with 3
+sym2int.pl: replacing SCHERIN with 3
+sym2int.pl: replacing REENTERTAINING with 3
+sym2int.pl: replacing PETTINGIL'S with 3
+sym2int.pl: replacing ICECREAMS with 3
+sym2int.pl: replacing MULATTER with 3
+sym2int.pl: replacing SWEENEYS with 3
+sym2int.pl: replacing DEASEY with 3
+sym2int.pl: replacing DEASEY with 3
+sym2int.pl: replacing DEASEY with 3
+sym2int.pl: replacing SAZEN with 3
+sym2int.pl: replacing GENZABURO with 3
+sym2int.pl: replacing ADZUMA with 3
+sym2int.pl: replacing CHOKICHI with 3
+sym2int.pl: replacing OJI with 3
+sym2int.pl: replacing GENZABURO with 3
+sym2int.pl: replacing KOYO with 3
+sym2int.pl: replacing KOYO with 3
+sym2int.pl: replacing KOYO with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 77 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 502 graphs, failed for 0
+# Accounting: time=24 threads=1
+# Ended (code 0) at Sun Mar 14 15:43:58 EET 2021, elapsed time 24 seconds

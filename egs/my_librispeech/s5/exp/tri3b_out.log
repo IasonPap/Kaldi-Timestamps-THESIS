@@ -1,0 +1,1126 @@
+Tue Mar 16 21:40:45 EET 2021
+steps/train_sat.sh --cmd run.pl 2500 15000 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b/log/analyze_alignments.log
+1 warnings in exp/tri3b/log/questions.log
+1 warnings in exp/tri3b/log/build_tree.log
+193 warnings in exp/tri3b/log/align.*.*.log
+1 warnings in exp/tri3b/log/compile_questions.log
+20 warnings in exp/tri3b/log/acc.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-49.9407 -49.4098 -49.2872 -49.0003 -48.4865 -48.06 -47.7584 -47.5304 -47.3375 -46.5932 -46.3675 -46.1351 -46.0027 -45.8946 -45.7821 -45.6806 -45.597 -45.5243 -45.4561 -45.2689 -45.165 -45.1046 -45.0499 -44.9959 -44.9445 -44.8962 -44.8486 -44.8035 -44.7606 -44.6465 -44.5818 -44.5573 -44.5434 -44.5341 
+exp/tri3b: nj=10 align prob=-47.83 over 35.12h [retry=0.5%, fail=0.0%] states=2144 gauss=15027 fmllr-impr=3.37 over 28.93h tree-impr=8.63
+steps/train_sat.sh: done training SAT system in exp/tri3b
+Tue Mar 16 22:21:30 EET 2021
+steps/train_sat.sh --cmd run.pl 6250 15000 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+267 warnings in exp/tri3b-leaves/log/align.*.*.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+40 warnings in exp/tri3b-leaves/log/acc.*.*.log
+1 warnings in exp/tri3b-leaves/log/fmllr.*.*.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+steps/train_sat.sh: Likelihood evolution:
+-48.9671 -48.431 -48.2981 -48.0337 -47.4672 -47.0929 -46.9138 -46.7915 -46.6812 -46.0388 -45.8749 -45.7477 -45.6851 -45.6367 -45.5941 -45.5548 -45.5157 -45.4622 -45.3924 -45.231 -45.1349 -45.0866 -45.044 -45.0052 -44.9699 -44.9376 -44.9083 -44.8799 -44.8491 -44.7549 -44.7027 -44.6889 -44.6817 -44.6767 
+exp/tri3b-leaves: nj=10 align prob=-47.82 over 35.12h [retry=0.8%, fail=0.0%] states=5288 gauss=15026 fmllr-impr=3.35 over 28.93h tree-impr=9.57
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Tue Mar 16 23:01:10 EET 2021
+steps/train_sat.sh --cmd run.pl 2500 107500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri3b-gauss/log/compile_questions.log
+1 warnings in exp/tri3b-gauss/log/build_tree.log
+2 warnings in exp/tri3b-gauss/log/update.*.log
+81 warnings in exp/tri3b-gauss/log/align.*.*.log
+1 warnings in exp/tri3b-gauss/log/questions.log
+steps/train_sat.sh: Likelihood evolution:
+-49.9407 -49.4098 -49.2872 -48.9906 -48.3326 -47.3452 -46.5271 -45.9574 -45.5359 -44.8073 -44.4819 -44.0763 -43.8568 -43.6962 -43.55 -43.4138 -43.2883 -43.1741 -43.066 -42.8594 -42.7143 -42.6241 -42.541 -42.462 -42.3865 -42.3139 -42.243 -42.1742 -42.1075 -41.9963 -41.9097 -41.8744 -41.8523 -41.8364 
+exp/tri3b-gauss: nj=10 align prob=-45.36 over 35.13h [retry=0.1%, fail=0.0%] states=2144 gauss=107616 fmllr-impr=3.44 over 28.93h tree-impr=8.63
+steps/train_sat.sh: done training SAT system in exp/tri3b-gauss
+Finished at: Wed Mar 17 00:01:15 EET 2021
+Wed Mar 17 00:18:48 EET 2021
+steps/train_sat.sh --cmd run.pl 4300 15000 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+262 warnings in exp/tri3b-leaves/log/align.*.*.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+1 warnings in exp/tri3b-leaves/log/fmllr.*.*.log
+40 warnings in exp/tri3b-leaves/log/acc.*.*.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+steps/train_sat.sh: Likelihood evolution:
+-49.3015 -48.77 -48.6415 -48.3639 -47.8685 -47.4978 -47.2547 -47.0549 -46.9043 -46.252 -46.0869 -45.9368 -45.8504 -45.7605 -45.6673 -45.5852 -45.5125 -45.4483 -45.3911 -45.233 -45.1442 -45.0934 -45.0423 -44.9912 -44.9434 -44.8973 -44.8544 -44.8139 -44.7759 -44.674 -44.6144 -44.5947 -44.5842 -44.5772 
+exp/tri3b-leaves: nj=10 align prob=-47.78 over 35.12h [retry=0.7%, fail=0.0%] states=3696 gauss=15026 fmllr-impr=3.35 over 28.93h tree-impr=9.23
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Wed Mar 17 00:58:11 EET 2021
+steps/train_sat.sh --cmd run.pl 8000 15000 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+55 warnings in exp/tri3b-leaves/log/acc.*.*.log
+292 warnings in exp/tri3b-leaves/log/align.*.*.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+2 warnings in exp/tri3b-leaves/log/fmllr.*.*.log
+1 warnings in exp/tri3b-leaves/log/init_model.log
+steps/train_sat.sh: Likelihood evolution:
+-48.763 -48.2241 -48.0854 -47.7774 -47.1954 -46.8316 -46.6779 -46.5875 -46.5134 -45.8781 -45.7253 -45.6168 -45.5673 -45.5317 -45.4981 -45.4682 -45.4392 -45.4103 -45.3817 -45.2672 -45.2017 -45.1738 -45.1446 -45.1194 -45.0936 -45.0602 -45.0149 -44.9703 -44.9298 -44.8364 -44.781 -44.7657 -44.7572 -44.7508 
+exp/tri3b-leaves: nj=10 align prob=-47.88 over 35.12h [retry=0.9%, fail=0.0%] states=6768 gauss=15018 fmllr-impr=3.36 over 28.93h tree-impr=9.77
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Wed Mar 17 01:37:34 EET 2021
+steps/train_sat.sh --cmd run.pl 2500 153750 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-gauss/log/analyze_alignments.log
+66 warnings in exp/tri3b-gauss/log/align.*.*.log
+2 warnings in exp/tri3b-gauss/log/est_alimdl.log
+1 warnings in exp/tri3b-gauss/log/questions.log
+26 warnings in exp/tri3b-gauss/log/update.*.log
+1 warnings in exp/tri3b-gauss/log/build_tree.log
+1 warnings in exp/tri3b-gauss/log/compile_questions.log
+steps/train_sat.sh: Likelihood evolution:
+-49.9407 -49.4098 -49.2872 -48.987 -48.2745 -47.1423 -46.2454 -45.6267 -45.174 -44.4453 -44.1024 -43.6844 -43.4411 -43.2616 -43.0998 -42.9524 -42.8154 -42.6872 -42.5666 -42.3582 -42.1983 -42.0932 -41.9971 -41.9064 -41.8192 -41.7338 -41.6496 -41.5681 -41.4888 -41.3725 -41.2791 -41.2419 -41.2179 -41.2001 
+exp/tri3b-gauss: nj=10 align prob=-44.77 over 35.13h [retry=0.1%, fail=0.0%] states=2144 gauss=153903 fmllr-impr=3.45 over 28.93h tree-impr=8.63
+steps/train_sat.sh: done training SAT system in exp/tri3b-gauss
+Wed Mar 17 02:48:06 EET 2021
+steps/train_sat.sh --cmd run.pl 6250 107500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri3b-gauss/log/fmllr.*.*.log
+20 warnings in exp/tri3b-gauss/log/acc.*.*.log
+1 warnings in exp/tri3b-gauss/log/compile_questions.log
+7 warnings in exp/tri3b-gauss/log/update.*.log
+1 warnings in exp/tri3b-gauss/log/questions.log
+125 warnings in exp/tri3b-gauss/log/align.*.*.log
+1 warnings in exp/tri3b-gauss/log/build_tree.log
+steps/train_sat.sh: Likelihood evolution:
+-48.9671 -48.431 -48.2981 -48.0291 -47.3779 -46.6184 -46.0195 -45.5424 -45.1637 -44.4881 -44.1941 -43.8558 -43.6563 -43.5064 -43.3738 -43.2493 -43.1326 -43.0231 -42.9176 -42.7163 -42.5721 -42.4842 -42.4037 -42.3271 -42.2508 -42.1763 -42.1051 -42.0351 -41.9689 -41.8572 -41.7718 -41.74 -41.72 -41.7051 
+exp/tri3b-gauss: nj=10 align prob=-45.01 over 35.13h [retry=0.1%, fail=0.0%] states=5288 gauss=107651 fmllr-impr=3.40 over 28.93h tree-impr=9.57
+steps/train_sat.sh: done training SAT system in exp/tri3b-gauss
+Wed Mar 17 03:36:44 EET 2021
+steps/train_sat.sh --cmd run.pl --num_iters 40 2500 153750 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-iters
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+Pass 35
+Pass 36
+Pass 37
+Pass 38
+Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-iters
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-iters/log/analyze_alignments.log
+66 warnings in exp/tri3b-iters/log/align.*.*.log
+1 warnings in exp/tri3b-iters/log/compile_questions.log
+1 warnings in exp/tri3b-iters/log/build_tree.log
+1 warnings in exp/tri3b-iters/log/questions.log
+34 warnings in exp/tri3b-iters/log/update.*.log
+steps/train_sat.sh: Likelihood evolution:
+-49.9407 -49.4098 -49.2872 -48.987 -48.2745 -47.1423 -46.2454 -45.6267 -45.174 -44.4453 -44.1024 -43.6844 -43.4411 -43.2616 -43.0998 -42.9524 -42.8154 -42.6872 -42.5666 -42.3582 -42.1983 -42.0932 -41.9971 -41.9064 -41.8192 -41.7338 -41.6496 -41.5681 -41.4888 -41.3725 -41.2791 -41.2419 -41.2179 -41.2001 -41.1863 -41.1752 -41.1662 -41.1585 -41.1519 
+exp/tri3b-iters: nj=10 align prob=-44.77 over 35.13h [retry=0.1%, fail=0.0%] states=2144 gauss=153903 fmllr-impr=3.45 over 28.93h tree-impr=8.63
+steps/train_sat.sh: done training SAT system in exp/tri3b-iters
+Finished at: Wed Mar 17 04:58:51 EET 2021
+Wed Mar 17 14:03:04 EET 2021
+steps/train_sat.sh --cmd run.pl 4300 107500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+94 warnings in exp/tri3b-leaves/log/align.*.*.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+2 warnings in exp/tri3b-leaves/log/update.*.log
+steps/train_sat.sh: Likelihood evolution:
+-49.3015 -48.77 -48.6415 -48.3558 -47.7264 -46.8527 -46.136 -45.6237 -45.2469 -44.5672 -44.2695 -43.9173 -43.7223 -43.5695 -43.4272 -43.2944 -43.1718 -43.058 -42.9526 -42.753 -42.6096 -42.5204 -42.4392 -42.3614 -42.2874 -42.2157 -42.1448 -42.0757 -42.0075 -41.8934 -41.8058 -41.7722 -41.7516 -41.7366 
+exp/tri3b-leaves: nj=10 align prob=-45.11 over 35.13h [retry=0.1%, fail=0.0%] states=3696 gauss=107623 fmllr-impr=3.41 over 28.93h tree-impr=9.23
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Wed Mar 17 14:54:34 EET 2021
+steps/train_sat.sh --cmd run.pl 2500 176900 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri3b-gauss/log/compile_questions.log
+1 warnings in exp/tri3b-gauss/log/build_tree.log
+55 warnings in exp/tri3b-gauss/log/update.*.log
+1 warnings in exp/tri3b-gauss/log/questions.log
+4 warnings in exp/tri3b-gauss/log/est_alimdl.log
+68 warnings in exp/tri3b-gauss/log/align.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-49.9407 -49.4098 -49.2872 -48.9856 -48.2574 -47.0796 -46.1392 -45.5153 -45.0472 -44.3203 -43.9666 -43.5285 -43.2738 -43.0875 -42.9195 -42.7631 -42.6189 -42.4853 -42.3594 -42.1491 -41.9823 -41.8719 -41.7688 -41.669 -41.5737 -41.4801 -41.3898 -41.3025 -41.2174 -41.0992 -41.0037 -40.9655 -40.9405 -40.9219 
+exp/tri3b-gauss: nj=10 align prob=-44.52 over 35.13h [retry=0.1%, fail=0.0%] states=2144 gauss=177060 fmllr-impr=3.46 over 28.93h tree-impr=8.63
+steps/train_sat.sh: done training SAT system in exp/tri3b-gauss
+Wed Mar 17 16:14:24 EET 2021
+steps/train_sat.sh --cmd run.pl 3400 107500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+92 warnings in exp/tri3b-leaves/log/align.*.*.log
+3 warnings in exp/tri3b-leaves/log/update.*.log
+steps/train_sat.sh: Likelihood evolution:
+-49.5603 -49.0298 -48.9041 -48.6148 -47.9773 -47.0473 -46.2857 -45.7616 -45.36 -44.6587 -44.3504 -43.9749 -43.7645 -43.6063 -43.4623 -43.3311 -43.2118 -43.0998 -42.9943 -42.7899 -42.6423 -42.5516 -42.47 -42.3935 -42.3192 -42.2445 -42.1732 -42.1045 -42.0373 -41.9246 -41.8375 -41.8028 -41.7812 -41.7654 
+exp/tri3b-leaves: nj=10 align prob=-45.20 over 35.13h [retry=0.1%, fail=0.0%] states=2936 gauss=107619 fmllr-impr=3.42 over 28.93h tree-impr=8.99
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Wed Mar 17 17:10:52 EET 2021
+steps/train_sat.sh --cmd run.pl 5275 107500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+20 warnings in exp/tri3b-leaves/log/acc.*.*.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+1 warnings in exp/tri3b-leaves/log/est_alimdl.log
+1 warnings in exp/tri3b-leaves/log/fmllr.*.*.log
+6 warnings in exp/tri3b-leaves/log/update.*.log
+109 warnings in exp/tri3b-leaves/log/align.*.*.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+steps/train_sat.sh: Likelihood evolution:
+-49.1122 -48.5783 -48.4469 -48.1526 -47.4931 -46.6888 -46.0411 -45.5752 -45.2053 -44.526 -44.2243 -43.8724 -43.6726 -43.5237 -43.3882 -43.2589 -43.1378 -43.0253 -42.9193 -42.7189 -42.5746 -42.4848 -42.4048 -42.3284 -42.2541 -42.1815 -42.1106 -42.0423 -41.9759 -41.864 -41.7777 -41.7446 -41.7241 -41.7093 
+exp/tri3b-leaves: nj=10 align prob=-45.05 over 35.13h [retry=0.1%, fail=0.0%] states=4480 gauss=107627 fmllr-impr=3.41 over 28.93h tree-impr=9.42
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Finished at: Wed Mar 17 18:02:09 EET 2021
+Wed Mar 17 18:19:54 EET 2021
+steps/train_sat.sh --cmd run.pl 8125 107500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+2 warnings in exp/tri3b-leaves/log/est_alimdl.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+1 warnings in exp/tri3b-leaves/log/fmllr.*.*.log
+16 warnings in exp/tri3b-leaves/log/update.*.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+1 warnings in exp/tri3b-leaves/log/init_model.log
+153 warnings in exp/tri3b-leaves/log/align.*.*.log
+25 warnings in exp/tri3b-leaves/log/acc.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.7502 -48.211 -48.0714 -47.7496 -47.0952 -46.4006 -45.8698 -45.4629 -45.1222 -44.427 -44.1337 -43.8231 -43.6398 -43.4925 -43.3573 -43.233 -43.1182 -43.0114 -42.9093 -42.7117 -42.5694 -42.4815 -42.4002 -42.3229 -42.2483 -42.1777 -42.1087 -42.0397 -41.9737 -41.8617 -41.7776 -41.7474 -41.7286 -41.715 
+exp/tri3b-leaves: nj=10 align prob=-44.98 over 35.12h [retry=0.2%, fail=0.0%] states=6880 gauss=107632 fmllr-impr=3.40 over 28.93h tree-impr=9.78
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Wed Mar 17 19:06:49 EET 2021
+steps/train_sat.sh --cmd run.pl 2500 188500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri3b-gauss/log/questions.log
+70 warnings in exp/tri3b-gauss/log/align.*.*.log
+1 warnings in exp/tri3b-gauss/log/compile_questions.log
+1 warnings in exp/tri3b-gauss/log/build_tree.log
+2 warnings in exp/tri3b-gauss/log/est_alimdl.log
+65 warnings in exp/tri3b-gauss/log/update.*.log
+steps/train_sat.sh: Likelihood evolution:
+-49.9407 -49.4098 -49.2872 -48.9852 -48.242 -47.0259 -46.0924 -45.4595 -44.9787 -44.2559 -43.9048 -43.465 -43.2073 -43.0124 -42.8392 -42.6846 -42.5374 -42.3982 -42.2668 -42.052 -41.8801 -41.7652 -41.659 -41.5579 -41.461 -41.3659 -41.272 -41.1809 -41.0923 -40.9731 -40.877 -40.839 -40.8139 -40.7949 
+exp/tri3b-gauss: nj=10 align prob=-44.40 over 35.13h [retry=0.1%, fail=0.0%] states=2144 gauss=188691 fmllr-impr=3.46 over 28.93h tree-impr=8.63
+steps/train_sat.sh: done training SAT system in exp/tri3b-gauss
+Wed Mar 17 20:26:50 EET 2021
+steps/train_sat.sh --cmd run.pl 10000 107500 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-leaves
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri3b-leaves/log/compile_questions.log
+145 warnings in exp/tri3b-leaves/log/align.*.*.log
+25 warnings in exp/tri3b-leaves/log/acc.*.*.log
+1 warnings in exp/tri3b-leaves/log/fmllr.*.*.log
+5 warnings in exp/tri3b-leaves/log/init_model.log
+1 warnings in exp/tri3b-leaves/log/build_tree.log
+14 warnings in exp/tri3b-leaves/log/update.*.log
+1 warnings in exp/tri3b-leaves/log/questions.log
+steps/train_sat.sh: Likelihood evolution:
+-48.5933 -48.0528 -47.9106 -47.5961 -46.9263 -46.2741 -45.7718 -45.4048 -45.0902 -44.3905 -44.0918 -43.8004 -43.6322 -43.492 -43.3604 -43.2377 -43.1242 -43.0188 -42.9187 -42.721 -42.5781 -42.4905 -42.4104 -42.3343 -42.2611 -42.19 -42.1196 -42.0521 -41.9865 -41.8743 -41.7908 -41.7615 -41.7433 -41.73 
+exp/tri3b-leaves: nj=10 align prob=-44.97 over 35.12h [retry=0.2%, fail=0.0%] states=8368 gauss=107645 fmllr-impr=3.39 over 28.93h tree-impr=9.94
+steps/train_sat.sh: done training SAT system in exp/tri3b-leaves
+Wed Mar 17 21:13:29 EET 2021
+steps/train_sat.sh --cmd run.pl 2500 200000 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b-gauss
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri3b-gauss/log/compile_questions.log
+1 warnings in exp/tri3b-gauss/log/questions.log
+1 warnings in exp/tri3b-gauss/log/build_tree.log
+65 warnings in exp/tri3b-gauss/log/update.*.log
+56 warnings in exp/tri3b-gauss/log/align.*.*.log
+4 warnings in exp/tri3b-gauss/log/est_alimdl.log
+steps/train_sat.sh: Likelihood evolution:
+-49.9407 -49.4098 -49.2872 -48.983 -48.2398 -47.0045 -46.0436 -45.4003 -44.9218 -44.2016 -43.8426 -43.3985 -43.1322 -42.9409 -42.7673 -42.6053 -42.4541 -42.3135 -42.1805 -41.9645 -41.7894 -41.6718 -41.5625 -41.4575 -41.3562 -41.2582 -41.1619 -41.0668 -40.9733 -40.8505 -40.7524 -40.714 -40.6887 -40.6695 
+exp/tri3b-gauss: nj=10 align prob=-44.29 over 35.13h [retry=0.0%, fail=0.0%] states=2144 gauss=200172 fmllr-impr=3.46 over 28.93h tree-impr=8.63
+steps/train_sat.sh: done training SAT system in exp/tri3b-gauss
+Finished at: Wed Mar 17 22:36:43 EET 2021
+Wed Mar 17 23:52:19 EET 2021
+steps/train_sat.sh --cmd run.pl 10000 200000 data/train_10k data/lang_nosp exp/tri2b_ali_10k exp/tri3b
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri2b_ali_10k
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri2b_ali_10k to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b/log/analyze_alignments.log
+1 warnings in exp/tri3b/log/build_tree.log
+1 warnings in exp/tri3b/log/questions.log
+265 warnings in exp/tri3b/log/update.*.log
+6 warnings in exp/tri3b/log/init_model.log
+7 warnings in exp/tri3b/log/est_alimdl.log
+99 warnings in exp/tri3b/log/align.*.*.log
+steps/train_sat.sh: Likelihood evolution:
+-48.585 -48.0441 -47.9018 -47.5857 -46.8585 -45.9877 -45.3416 -44.851 -44.4689 -43.7869 -43.4384 -43.0628 -42.8403 -42.6691 -42.5094 -42.3607 -42.2193 -42.0818 -41.9486 -41.7342 -41.5576 -41.4434 -41.336 -41.2311 -41.1296 -41.0321 -40.9367 -40.8428 -40.7509 -40.6266 -40.5298 -40.4954 -40.4731 -40.4561 
+exp/tri3b: nj=10 align prob=-43.77 over 35.13h [retry=0.1%, fail=0.0%] states=8384 gauss=200276 fmllr-impr=3.41 over 28.93h tree-impr=9.94
+steps/train_sat.sh: done training SAT system in exp/tri3b
+Finished with tri3b at: Thu Mar 18 00:44:38 EET 2021
+Thu Mar 18 00:44:38 EET 2021
+Thu Mar 18 12:12:26 EET 2021
+steps/align_fmllr.sh --nj 10 --cmd run.pl data/train_clean_100 data/lang_nosp exp/tri3b exp/tri3b_ali_clean_100
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train_clean_100 using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b_ali_clean_100
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali_clean_100/log/analyze_alignments.log
+227 warnings in exp/tri3b_ali_clean_100/log/align_pass1.*.log
+317 warnings in exp/tri3b_ali_clean_100/log/align_pass2.*.log
+3 warnings in exp/tri3b_ali_clean_100/log/fmllr.*.log
+Finished with alignment at: Thu Mar 18 12:48:39 EET 2021
+Fri Mar 19 00:13:22 EET 2021
+steps/align_fmllr.sh --nj 20 --cmd run.pl data/train_clean_100 data/lang_nosp exp/tri3b exp/tri3b_ali_clean_100
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+Fri Mar 19 13:20:14 EET 2021
+steps/align_fmllr.sh --nj 20 --cmd run.pl data/train_clean_100 data/lang_nosp exp/tri3b exp/tri3b_ali_clean_100
+--transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1
+4
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train_clean_100 using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri3b_ali_clean_100
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali_clean_100/log/analyze_alignments.log
+2 warnings in exp/tri3b_ali_clean_100/log/fmllr.*.log
+157 warnings in exp/tri3b_ali_clean_100/log/align_pass1.*.log
+213 warnings in exp/tri3b_ali_clean_100/log/align_pass2.*.log
+Finished with alignment at: Fri Mar 19 13:58:08 EET 2021
+Sat Mar 20 12:57:00 EET 2021
+Sat Mar 20 18:16:17 EET 2021

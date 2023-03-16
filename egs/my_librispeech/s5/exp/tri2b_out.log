@@ -1,0 +1,1395 @@
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 15000 data/train_clean_100 data/lang_nosp exp/tri1_ali_10k exp/tri2b-control
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-control
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-control/log/analyze_alignments.log
+24 warnings in exp/tri2b-control/log/acc.*.*.log
+1 warnings in exp/tri2b-control/log/lda_acc.*.log
+227 warnings in exp/tri2b-control/log/align.*.*.log
+1 warnings in exp/tri2b-control/log/build_tree.log
+1 warnings in exp/tri2b-control/log/questions.log
+exp/tri2b-control: nj=10 align prob=-49.45 over 100.45h [retry=0.2%, fail=0.0%] states=2072 gauss=15042 tree-impr=4.51 lda-sum=20.21 mllt:impr,logdet=1.08,1.53
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-control
+Mon Mar 15 02:26:00 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 45000 data/train_clean_100 data/lang_nosp exp/tri1_ali_10k exp/tri2b-gauss
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri2b-gauss/log/build_tree.log
+1 warnings in exp/tri2b-gauss/log/questions.log
+24 warnings in exp/tri2b-gauss/log/acc.*.*.log
+1 warnings in exp/tri2b-gauss/log/lda_acc.*.log
+145 warnings in exp/tri2b-gauss/log/align.*.*.log
+exp/tri2b-gauss: nj=10 align prob=-48.67 over 100.45h [retry=0.1%, fail=0.0%] states=2072 gauss=45099 tree-impr=4.51 lda-sum=20.21 mllt:impr,logdet=1.12,1.79
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-gauss
+Mon Mar 15 03:44:26 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 5000 45000 data/train_clean_100 data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leaves/log/analyze_alignments.log
+24 warnings in exp/tri2b-leaves/log/acc.*.*.log
+192 warnings in exp/tri2b-leaves/log/align.*.*.log
+1 warnings in exp/tri2b-leaves/log/build_tree.log
+1 warnings in exp/tri2b-leaves/log/questions.log
+1 warnings in exp/tri2b-leaves/log/lda_acc.*.log
+exp/tri2b-leaves: nj=10 align prob=-48.73 over 100.45h [retry=0.2%, fail=0.0%] states=4000 gauss=45100 tree-impr=4.76 lda-sum=20.21 mllt:impr,logdet=1.12,1.70
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leaves
+Mon Mar 15 04:46:30 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=11 --right-context=3 5000 45000 data/train_clean_100 data/lang_nosp exp/tri1_ali_10k exp/tri2b-left
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-left
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-left/log/analyze_alignments.log
+373 warnings in exp/tri2b-left/log/align.*.*.log
+1 warnings in exp/tri2b-left/log/build_tree.log
+34 warnings in exp/tri2b-left/log/acc.*.*.log
+1 warnings in exp/tri2b-left/log/lda_acc.*.log
+1 warnings in exp/tri2b-left/log/questions.log
+exp/tri2b-left: nj=10 align prob=-47.92 over 100.45h [retry=0.3%, fail=0.0%] states=4144 gauss=45114 tree-impr=5.49 lda-sum=21.97 mllt:impr,logdet=1.03,1.62
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-left
+Mon Mar 15 05:54:42 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=11 5000 45000 data/train_clean_100 data/lang_nosp exp/tri1_ali_10k exp/tri2b-right
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-right
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-right/log/analyze_alignments.log
+44 warnings in exp/tri2b-right/log/acc.*.*.log
+1 warnings in exp/tri2b-right/log/build_tree.log
+1 warnings in exp/tri2b-right/log/questions.log
+253 warnings in exp/tri2b-right/log/align.*.*.log
+1 warnings in exp/tri2b-right/log/lda_acc.*.log
+exp/tri2b-right: nj=10 align prob=-48.07 over 100.45h [retry=0.2%, fail=0.0%] states=4128 gauss=45115 tree-impr=5.67 lda-sum=22.13 mllt:impr,logdet=0.98,1.56
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-right
+Mon Mar 15 12:06:15 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 60000 data/train_clean_100 data/lang_nosp exp/tri1_ali_10k exp/tri2b-gauss
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri2b-gauss/log/questions.log
+126 warnings in exp/tri2b-gauss/log/align.*.*.log
+1 warnings in exp/tri2b-gauss/log/lda_acc.*.log
+1 warnings in exp/tri2b-gauss/log/build_tree.log
+9 warnings in exp/tri2b-gauss/log/acc.*.*.log
+exp/tri2b-gauss: nj=10 align prob=-48.50 over 100.45h [retry=0.1%, fail=0.0%] states=2072 gauss=60134 tree-impr=4.51 lda-sum=20.21 mllt:impr,logdet=1.13,1.89
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-gauss
+Mon Mar 15 13:29:46 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 6250 45000 data/train_clean_100 data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+
+
+Mon Mar 15 14:05:34 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 15000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-control
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-control
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-control/log/analyze_alignments.log
+1 warnings in exp/tri2b-control/log/build_tree.log
+13 warnings in exp/tri2b-control/log/lda_acc.*.log
+1 warnings in exp/tri2b-control/log/acc_tree.*.log
+126 warnings in exp/tri2b-control/log/acc.*.*.log
+1 warnings in exp/tri2b-control/log/questions.log
+103 warnings in exp/tri2b-control/log/align.*.*.log
+exp/tri2b-control: nj=10 align prob=-49.42 over 35.13h [retry=0.2%, fail=0.0%] states=2064 gauss=15038 tree-impr=4.50 lda-sum=20.23 mllt:impr,logdet=1.08,1.53
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-control
+Mon Mar 15 14:24:31 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 60000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-gauss
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-gauss/log/analyze_alignments.log
+60 warnings in exp/tri2b-gauss/log/align.*.*.log
+13 warnings in exp/tri2b-gauss/log/lda_acc.*.log
+126 warnings in exp/tri2b-gauss/log/acc.*.*.log
+1 warnings in exp/tri2b-gauss/log/questions.log
+1 warnings in exp/tri2b-gauss/log/acc_tree.*.log
+1 warnings in exp/tri2b-gauss/log/build_tree.log
+exp/tri2b-gauss: nj=10 align prob=-48.33 over 35.13h [retry=0.1%, fail=0.0%] states=2064 gauss=60114 tree-impr=4.50 lda-sum=20.23 mllt:impr,logdet=1.12,1.92
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-gauss
+Mon Mar 15 14:55:49 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 6250 45000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leaves/log/analyze_alignments.log
+1 warnings in exp/tri2b-leaves/log/update.*.log
+13 warnings in exp/tri2b-leaves/log/init_model.log
+126 warnings in exp/tri2b-leaves/log/acc.*.*.log
+1 warnings in exp/tri2b-leaves/log/build_tree.log
+13 warnings in exp/tri2b-leaves/log/lda_acc.*.log
+90 warnings in exp/tri2b-leaves/log/align.*.*.log
+1 warnings in exp/tri2b-leaves/log/questions.log
+1 warnings in exp/tri2b-leaves/log/acc_tree.*.log
+exp/tri2b-leaves: nj=10 align prob=-48.63 over 35.13h [retry=0.2%, fail=0.0%] states=4944 gauss=45096 tree-impr=4.84 lda-sum=20.23 mllt:impr,logdet=1.09,1.64
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leaves
+Mon Mar 15 15:17:48 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=10 --right-context=10 5000 45000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-leftright
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leftright
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leftright/log/analyze_alignments.log
+126 warnings in exp/tri2b-leftright/log/acc.*.*.log
+13 warnings in exp/tri2b-leftright/log/lda_acc.*.log
+1 warnings in exp/tri2b-leftright/log/acc_tree.*.log
+1 warnings in exp/tri2b-leftright/log/update.*.log
+160 warnings in exp/tri2b-leftright/log/align.*.*.log
+1 warnings in exp/tri2b-leftright/log/build_tree.log
+1 warnings in exp/tri2b-leftright/log/questions.log
+exp/tri2b-leftright: nj=10 align prob=-47.44 over 35.13h [retry=0.3%, fail=0.0%] states=4200 gauss=45114 tree-impr=6.17 lda-sum=23.69 mllt:impr,logdet=1.00,1.60
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leftright
+
+
+Mon Mar 15 16:41:37 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 67500 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-gauss
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-gauss/log/analyze_alignments.log
+57 warnings in exp/tri2b-gauss/log/align.*.*.log
+1 warnings in exp/tri2b-gauss/log/build_tree.log
+1 warnings in exp/tri2b-gauss/log/acc_tree.*.log
+1 warnings in exp/tri2b-gauss/log/questions.log
+13 warnings in exp/tri2b-gauss/log/lda_acc.*.log
+126 warnings in exp/tri2b-gauss/log/acc.*.*.log
+exp/tri2b-gauss: nj=10 align prob=-48.22 over 35.13h [retry=0.1%, fail=0.0%] states=2064 gauss=67614 tree-impr=4.50 lda-sum=20.23 mllt:impr,logdet=1.12,1.95
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-gauss
+Mon Mar 15 17:15:13 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 6975 45000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leaves/log/analyze_alignments.log
+5 warnings in exp/tri2b-leaves/log/update.*.log
+23 warnings in exp/tri2b-leaves/log/init_model.log
+105 warnings in exp/tri2b-leaves/log/align.*.*.log
+1 warnings in exp/tri2b-leaves/log/questions.log
+1 warnings in exp/tri2b-leaves/log/acc_tree.*.log
+1 warnings in exp/tri2b-leaves/log/build_tree.log
+13 warnings in exp/tri2b-leaves/log/lda_acc.*.log
+126 warnings in exp/tri2b-leaves/log/acc.*.*.log
+exp/tri2b-leaves: nj=10 align prob=-48.67 over 35.13h [retry=0.2%, fail=0.0%] states=5488 gauss=45084 tree-impr=4.88 lda-sum=20.23 mllt:impr,logdet=1.09,1.64
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leaves
+
+
+Mon Mar 15 21:48:33 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 71250 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-gauss
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri2b-gauss/log/build_tree.log
+13 warnings in exp/tri2b-gauss/log/lda_acc.*.log
+53 warnings in exp/tri2b-gauss/log/align.*.*.log
+126 warnings in exp/tri2b-gauss/log/acc.*.*.log
+1 warnings in exp/tri2b-gauss/log/questions.log
+1 warnings in exp/tri2b-gauss/log/acc_tree.*.log
+1 warnings in exp/tri2b-gauss/log/update.*.log
+exp/tri2b-gauss: nj=10 align prob=-48.17 over 35.13h [retry=0.1%, fail=0.0%] states=2064 gauss=71370 tree-impr=4.50 lda-sum=20.23 mllt:impr,logdet=1.12,1.97
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-gauss
+Mon Mar 15 22:23:26 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 3750 45000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leaves/log/analyze_alignments.log
+13 warnings in exp/tri2b-leaves/log/lda_acc.*.log
+87 warnings in exp/tri2b-leaves/log/align.*.*.log
+1 warnings in exp/tri2b-leaves/log/questions.log
+1 warnings in exp/tri2b-leaves/log/build_tree.log
+1 warnings in exp/tri2b-leaves/log/acc_tree.*.log
+126 warnings in exp/tri2b-leaves/log/acc.*.*.log
+exp/tri2b-leaves: nj=10 align prob=-48.56 over 35.13h [retry=0.2%, fail=0.0%] states=3056 gauss=45089 tree-impr=4.66 lda-sum=20.23 mllt:impr,logdet=1.09,1.74
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leaves
+
+
+Mon Mar 15 23:27:26 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 2500 75000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-gauss
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-gauss
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-gauss/log/analyze_alignments.log
+1 warnings in exp/tri2b-gauss/log/build_tree.log
+126 warnings in exp/tri2b-gauss/log/acc.*.*.log
+1 warnings in exp/tri2b-gauss/log/questions.log
+1 warnings in exp/tri2b-gauss/log/acc_tree.*.log
+54 warnings in exp/tri2b-gauss/log/align.*.*.log
+13 warnings in exp/tri2b-gauss/log/lda_acc.*.log
+exp/tri2b-gauss: nj=10 align prob=-48.13 over 35.13h [retry=0.1%, fail=0.0%] states=2064 gauss=75106 tree-impr=4.50 lda-sum=20.23 mllt:impr,logdet=1.12,1.99
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-gauss
+Tue Mar 16 00:06:09 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 5800 45000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leaves/log/analyze_alignments.log
+11 warnings in exp/tri2b-leaves/log/init_model.log
+5 warnings in exp/tri2b-leaves/log/update.*.log
+13 warnings in exp/tri2b-leaves/log/lda_acc.*.log
+1 warnings in exp/tri2b-leaves/log/questions.log
+1 warnings in exp/tri2b-leaves/log/build_tree.log
+94 warnings in exp/tri2b-leaves/log/align.*.*.log
+126 warnings in exp/tri2b-leaves/log/acc.*.*.log
+1 warnings in exp/tri2b-leaves/log/acc_tree.*.log
+exp/tri2b-leaves: nj=10 align prob=-48.62 over 35.13h [retry=0.2%, fail=0.0%] states=4616 gauss=45089 tree-impr=4.82 lda-sum=20.23 mllt:impr,logdet=1.08,1.67
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leaves
+Tue Mar 16 00:28:56 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 4370 45000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leaves/log/analyze_alignments.log
+78 warnings in exp/tri2b-leaves/log/align.*.*.log
+126 warnings in exp/tri2b-leaves/log/acc.*.*.log
+13 warnings in exp/tri2b-leaves/log/lda_acc.*.log
+1 warnings in exp/tri2b-leaves/log/update.*.log
+1 warnings in exp/tri2b-leaves/log/build_tree.log
+1 warnings in exp/tri2b-leaves/log/acc_tree.*.log
+1 warnings in exp/tri2b-leaves/log/questions.log
+exp/tri2b-leaves: nj=10 align prob=-48.56 over 35.13h [retry=0.1%, fail=0.0%] states=3520 gauss=45082 tree-impr=4.72 lda-sum=20.23 mllt:impr,logdet=1.09,1.70
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leaves
+
+
+Tue Mar 16 12:06:28 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=3 --right-context=3 5000 45000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b-leaves
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b-leaves
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b-leaves/log/analyze_alignments.log
+13 warnings in exp/tri2b-leaves/log/lda_acc.*.log
+1 warnings in exp/tri2b-leaves/log/acc_tree.*.log
+5 warnings in exp/tri2b-leaves/log/init_model.log
+126 warnings in exp/tri2b-leaves/log/acc.*.*.log
+1 warnings in exp/tri2b-leaves/log/questions.log
+1 warnings in exp/tri2b-leaves/log/update.*.log
+86 warnings in exp/tri2b-leaves/log/align.*.*.log
+1 warnings in exp/tri2b-leaves/log/build_tree.log
+exp/tri2b-leaves: nj=10 align prob=-48.59 over 35.13h [retry=0.1%, fail=0.0%] states=3992 gauss=45102 tree-impr=4.77 lda-sum=20.23 mllt:impr,logdet=1.09,1.69
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b-leaves
+
+
+Tue Mar 16 12:40:14 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --num_iters 30 --splice-opts --left-context=10 --right-context=10 4370 75000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+1 warnings in exp/tri2b/log/build_tree.log
+13 warnings in exp/tri2b/log/lda_acc.*.log
+126 warnings in exp/tri2b/log/acc.*.*.log
+1 warnings in exp/tri2b/log/acc_tree.*.log
+127 warnings in exp/tri2b/log/align.*.*.log
+1 warnings in exp/tri2b/log/questions.log
+exp/tri2b: nj=10 align prob=-49.68 over 35.13h [retry=0.3%, fail=0.0%] states=1952 gauss=15034 tree-impr=6.08 lda-sum=23.69 mllt:impr,logdet=1.01,1.76
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+Tue Mar 16 13:07:38 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --num_iters 35 --splice-opts --left-context=10 --right-context=10 4370 75000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+1 warnings in exp/tri2b/log/build_tree.log
+117 warnings in exp/tri2b/log/align.*.*.log
+1 warnings in exp/tri2b/log/acc_tree.*.log
+1 warnings in exp/tri2b/log/questions.log
+126 warnings in exp/tri2b/log/acc.*.*.log
+13 warnings in exp/tri2b/log/lda_acc.*.log
+exp/tri2b: nj=10 align prob=-46.82 over 35.13h [retry=0.2%, fail=0.0%] states=3712 gauss=75158 tree-impr=6.08 lda-sum=23.69 mllt:impr,logdet=1.01,1.76
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+Tue Mar 16 13:41:35 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --num_iters 40 --splice-opts --left-context=10 --right-context=10 4370 75000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+Training pass 35
+Training pass 36
+Training pass 37
+Training pass 38
+Training pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+1 warnings in exp/tri2b/log/acc_tree.*.log
+117 warnings in exp/tri2b/log/align.*.*.log
+126 warnings in exp/tri2b/log/acc.*.*.log
+1 warnings in exp/tri2b/log/questions.log
+1 warnings in exp/tri2b/log/build_tree.log
+13 warnings in exp/tri2b/log/lda_acc.*.log
+exp/tri2b: nj=10 align prob=-46.82 over 35.13h [retry=0.2%, fail=0.0%] states=3712 gauss=75158 tree-impr=6.08 lda-sum=23.69 mllt:impr,logdet=1.01,1.76
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+
+
+Tue Mar 16 14:54:21 EET 2021
+steps/train_lda_mllt.sh --cmd run.pl --splice-opts --left-context=10 --right-context=10 4370 75000 data/train_10k data/lang_nosp exp/tri1_ali_10k exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali_10k to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+1 warnings in exp/tri2b/log/acc_tree.*.log
+1 warnings in exp/tri2b/log/build_tree.log
+13 warnings in exp/tri2b/log/lda_acc.*.log
+1 warnings in exp/tri2b/log/questions.log
+117 warnings in exp/tri2b/log/align.*.*.log
+126 warnings in exp/tri2b/log/acc.*.*.log
+exp/tri2b: nj=10 align prob=-46.82 over 35.13h [retry=0.2%, fail=0.0%] states=3712 gauss=75158 tree-impr=6.08 lda-sum=23.69 mllt:impr,logdet=1.01,1.76
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+Tue Mar 16 18:43:36 EET 2021
+steps/align_si.sh --nj 10 --cmd run.pl --use-graphs true --beam 10 --retry_beam 40 data/train_10k data/lang_nosp exp/tri2b exp/tri2b_ali_10k
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train_10k using model from exp/tri2b, putting alignments in exp/tri2b_ali_10k
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b_ali_10k
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b_ali_10k/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/align_si.sh --nj 10 --cmd run.pl --use-graphs true --beam 10 --retry_beam 40 data/train_10k data/lang_nosp exp/tri2b exp/tri2b_ali_10k
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train_10k using model from exp/tri2b, putting alignments in exp/tri2b_ali_10k
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b_ali_10k
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b_ali_10k/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/align_si.sh --nj 10 --cmd run.pl --use-graphs true --beam 30 --retry_beam 60 data/train_10k data/lang_nosp exp/tri2b exp/tri2b_ali_10k
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train_10k using model from exp/tri2b, putting alignments in exp/tri2b_ali_10k
+Wed Mar 17 23:47:16 EET 2021
+steps/align_si.sh --nj 10 --cmd run.pl --use-graphs true --beam 30 --retry_beam 60 data/train_10k data/lang_nosp exp/tri2b exp/tri2b_ali_10k
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train_10k using model from exp/tri2b, putting alignments in exp/tri2b_ali_10k
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang_nosp exp/tri2b_ali_10k
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b_ali_10k/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.

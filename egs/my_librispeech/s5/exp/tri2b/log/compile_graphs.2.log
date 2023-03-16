@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/2/text |" "ark:|gzip -c >exp/tri2b/fsts.2.gz" 
+# Started at Tue Mar 16 14:56:40 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/2/text |' 'ark:|gzip -c >exp/tri2b/fsts.2.gz' 
+sym2int.pl: replacing DESINTERESSE with 3
+sym2int.pl: replacing UGLIFYING with 3
+sym2int.pl: replacing BAROCCO with 3
+sym2int.pl: replacing PARODISTS with 3
+sym2int.pl: replacing GOLDENNESS with 3
+sym2int.pl: replacing NAIVETES with 3
+sym2int.pl: replacing FUEGIA with 3
+sym2int.pl: replacing GOEREE with 3
+sym2int.pl: replacing SCRAPPER'S with 3
+sym2int.pl: replacing SCRAPPER'S with 3
+sym2int.pl: replacing CRESTY'S with 3
+sym2int.pl: replacing UPGRADES with 3
+sym2int.pl: replacing RONICKY'S with 3
+sym2int.pl: replacing LAGREE with 3
+sym2int.pl: replacing LOCRINOS with 3
+sym2int.pl: replacing LOCRINOS with 3
+sym2int.pl: replacing LAGREE with 3
+sym2int.pl: replacing LAGREE with 3
+sym2int.pl: replacing LEGACIED with 3
+sym2int.pl: replacing D'ARNAULT with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 70 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 990 graphs, failed for 0
+# Accounting: time=42 threads=1
+# Ended (code 0) at Tue Mar 16 14:57:22 EET 2021, elapsed time 42 seconds

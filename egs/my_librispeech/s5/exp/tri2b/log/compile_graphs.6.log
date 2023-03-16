@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/6/text |" "ark:|gzip -c >exp/tri2b/fsts.6.gz" 
+# Started at Tue Mar 16 14:56:40 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/6/text |' 'ark:|gzip -c >exp/tri2b/fsts.6.gz' 
+sym2int.pl: replacing MAPLIKE with 3
+sym2int.pl: replacing STARGAZING with 3
+sym2int.pl: replacing SUMMIT'S with 3
+sym2int.pl: replacing UNGARISH with 3
+sym2int.pl: replacing OQUIRRH with 3
+sym2int.pl: replacing OVERCOMBING with 3
+sym2int.pl: replacing ERYTHRONIUM with 3
+sym2int.pl: replacing GRANDIFLORUM with 3
+sym2int.pl: replacing PUDICA with 3
+sym2int.pl: replacing SUPERBUM with 3
+sym2int.pl: replacing DARLINGTONIA with 3
+sym2int.pl: replacing HEARTWOOD with 3
+sym2int.pl: replacing CAYOS with 3
+sym2int.pl: replacing CAYOS with 3
+sym2int.pl: replacing JACQUETTE with 3
+sym2int.pl: replacing FALANDER'S with 3
+sym2int.pl: replacing ARAIGNEE with 3
+sym2int.pl: replacing REHNHJELM'S with 3
+sym2int.pl: replacing THRIVERS with 3
+sym2int.pl: replacing IMPEACH'D with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 114 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 1020 graphs, failed for 0
+# Accounting: time=45 threads=1
+# Ended (code 0) at Tue Mar 16 14:57:25 EET 2021, elapsed time 45 seconds

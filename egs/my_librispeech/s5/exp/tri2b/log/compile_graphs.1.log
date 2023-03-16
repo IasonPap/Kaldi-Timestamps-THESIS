@@ -1,0 +1,29 @@
+# compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst "ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/1/text |" "ark:|gzip -c >exp/tri2b/fsts.1.gz" 
+# Started at Tue Mar 16 14:56:40 EET 2021
+#
+compile-train-graphs --read-disambig-syms=data/lang_nosp/phones/disambig.int exp/tri2b/tree exp/tri2b/1.mdl data/lang_nosp/L.fst 'ark:utils/sym2int.pl --map-oov 3 -f 2- data/lang_nosp/words.txt < data/train_10k/split10/1/text |' 'ark:|gzip -c >exp/tri2b/fsts.1.gz' 
+sym2int.pl: replacing HOPETON with 3
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing AYSCUE with 3
+sym2int.pl: replacing EVERTSEN with 3
+sym2int.pl: replacing FLORISZOON with 3
+sym2int.pl: replacing BEVERNINGH with 3
+sym2int.pl: replacing NIEUWPOORT with 3
+sym2int.pl: replacing L'ALLEMANDE with 3
+sym2int.pl: replacing LURIDITY with 3
+sym2int.pl: replacing ERYTHEMA with 3
+sym2int.pl: replacing AETEOLOGIZED with 3
+sym2int.pl: replacing UNTOOTHSOME with 3
+sym2int.pl: replacing DINARZADE with 3
+sym2int.pl: replacing NORTHWESTLAND with 3
+sym2int.pl: replacing TINCOMB with 3
+sym2int.pl: replacing ADDRESSER with 3
+sym2int.pl: not warning for OOVs any more times
+** Replaced 56 instances of OOVs with 3
+LOG (compile-train-graphs[5.5.268-f9828]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 985 graphs, failed for 0
+# Accounting: time=43 threads=1
+# Ended (code 0) at Tue Mar 16 14:57:23 EET 2021, elapsed time 43 seconds

@@ -1,0 +1,16 @@
+# gmm-acc-stats-ali exp/mono-2/39.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/2/utt2spk scp:data/train_2kshort/split10/2/cmvn.scp scp:data/train_2kshort/split10/2/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono-2/ali.2.gz|" exp/mono-2/39.2.acc 
+# Started at Sat Mar 13 13:16:10 EET 2021
+#
+gmm-acc-stats-ali exp/mono-2/39.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train_2kshort/split10/2/utt2spk scp:data/train_2kshort/split10/2/cmvn.scp scp:data/train_2kshort/split10/2/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono-2/ali.2.gz|' exp/mono-2/39.2.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/train_2kshort/split10/2/utt2spk scp:data/train_2kshort/split10/2/cmvn.scp scp:data/train_2kshort/split10/2/feats.scp ark:- 
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance 1624-168623-0053 avg. like is -92.5304 over 404 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance 1898-145702-0017 avg. like is -91.8154 over 219 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance 1970-10594-0028 avg. like is -92.44 over 438 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance 201-127786-0049 avg. like is -98.0659 over 496 frames.
+LOG (apply-cmvn[5.5.268-f9828]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 222 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:112) Done 222 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -97.8496 over 79219 frames.
+LOG (gmm-acc-stats-ali[5.5.268-f9828]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Sat Mar 13 13:16:11 EET 2021, elapsed time 1 seconds
